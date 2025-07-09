@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import app_store_img from "./assets/images/App-Store.png";
 import google_play_img from "./assets/images/Google-Play.png";
+import musicians_app_img from "./assets/images/logo inline.png";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -127,7 +128,13 @@ function App() {
             <h2>Portfolio</h2>
             <p>Explore our recent projects.</p>
             <div className="portfolio-grid">
-              <div className="portfolio-item">Musician's App</div>
+              <div className="portfolio-item">
+                <img
+                  src={musicians_app_img}
+                  alt="Musician's App"
+                  className="w-50 mx-auto "
+                />
+              </div>
             </div>
           </div>
         </section>
