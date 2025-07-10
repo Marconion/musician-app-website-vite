@@ -1,3 +1,13 @@
+/* Disable smooth scrolling to prevent scroll animations */
+html {
+  scroll-behavior: auto !important;
+}
+
+/* Ensure immediate positioning */
+* {
+  scroll-behavior: auto !important;
+}
+
 /* Image Filters */
 .fill-white {
   filter: brightness(0) invert(1);
@@ -14,6 +24,16 @@
 
 .fill-white-alt3 {
   filter: sepia(1) saturate(0) brightness(2) contrast(1) invert(1);
+}
+
+/* Clickable Image Styles */
+.portfolio-item img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 /* App Layout */
@@ -37,7 +57,7 @@
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,7 +68,7 @@
   color: #fff5e0;
   margin: 0;
   font-size: 1.8rem;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .nav-menu {
@@ -106,7 +126,7 @@
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #005c78 0%, #153448 100%);
+  background: linear-gradient(135deg, #dfd0b8 0%, #153448 75%);
   color: #fff5e0;
   text-align: center;
   padding: 100px 2rem;
@@ -389,11 +409,6 @@
   .social-links {
     justify-content: center;
   }
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
 }
 
 /* Dark mode support */

@@ -1,0 +1,108 @@
+/* MusicianApp specific styles */
+
+/* Features section with cream background */
+.features-section {
+  background-color: #fff5e0 !important;
+}
+
+/* Features section heading color */
+.features-section h2 {
+  color: #153448 !important;
+}
+
+/* Download Button Styles for MusicianApp */
+.app-download-section {
+  margin-top: 5rem;
+}
+
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.download-btn {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar logo sizing for MusicianApp */
+.nav-logo img {
+  height: 3rem; /* 48px */
+}
+
+/* Hero section logo sizing for MusicianApp */
+.hero-content img {
+  max-width: 400px;
+  width: 100%;
+}
+.service-card {
+  margin: 0 auto;
+  background-color: #153448;
+}
+
+.support-section {
+  background-color: #fff5e0 !important;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.support-section h2 {
+  color: #153448;
+}
+.support-section h4 {
+  color: #fff5e0;
+}
+.support-section p {
+  color: #153448;
+}
+
+.support-section .contact-item p {
+  color: #fff5e0;
+  font-weight: 400;
+}
+
+.contact-item {
+  background-color: #153448;
+}
+.support-section .contact-item p {
+  color: lightgray;
+}
+
+/* Mobile responsive adjustments for MusicianApp */
+@media screen and (max-width: 768px) {
+  .nav-logo img {
+    height: 2.5rem; /* 40px */
+  }
+
+  .hero-content img {
+    max-width: 300px;
+  }
+
+  .download-buttons {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-logo img {
+    height: 3rem; /* 32px */
+  }
+
+  .hero-content img {
+    max-width: 250px;
+  }
+
+  .download-btn {
+    width: 180px;
+  }
+}

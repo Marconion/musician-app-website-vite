@@ -3,9 +3,44 @@ import "./App.css";
 import app_store_img from "./assets/images/App-Store.png";
 import google_play_img from "./assets/images/Google-Play.png";
 import musicians_app_img from "./assets/images/logo inline.png";
+import MusicianApp from "./MusicianApp.jsx";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [currentPage, setCurrentPage] = useState("home");
+
+  const handleMusicianAppClick = () => {
+    // Force immediate scroll reset using multiple methods
+    window.scrollTo({ top: 0, behavior: "auto" });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    window.pageYOffset = 0;
+    // Use requestAnimationFrame to ensure it happens immediately
+    requestAnimationFrame(() => {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    });
+    setCurrentPage("musician-app");
+  };
+
+  const handleBackToHome = () => {
+    // Force immediate scroll reset using multiple methods
+    window.scrollTo({ top: 0, behavior: "auto" });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    window.pageYOffset = 0;
+    // Use requestAnimationFrame to ensure it happens immediately
+    requestAnimationFrame(() => {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    });
+    setCurrentPage("home");
+  };
+
+  // If we're on the musician app page, render that component
+  if (currentPage === "musician-app") {
+    return <MusicianApp onBackToHome={handleBackToHome} />;
+  }
 
   return (
     <div className="app">
@@ -132,7 +167,9 @@ function App() {
                 <img
                   src={musicians_app_img}
                   alt="Musician's App"
-                  className="w-50 mx-auto "
+                  className="w-50 mx-auto cursor-pointer"
+                  onClick={handleMusicianAppClick}
+                  style={{ cursor: "pointer" }}
                 />
               </div>
             </div>
