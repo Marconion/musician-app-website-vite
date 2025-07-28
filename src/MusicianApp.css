@@ -10,6 +10,10 @@
   color: #153448 !important;
 }
 
+/* MusicianApp specific navbar styling */
+.musician-app .navbar {
+  background-color: #153448;
+}
 /* Download Button Styles for MusicianApp */
 .app-download-section {
   margin-top: 5rem;
@@ -36,7 +40,7 @@
 }
 
 /* Navbar logo sizing for MusicianApp */
-.nav-logo img {
+.musician-app .nav-logo img {
   height: 3rem; /* 48px */
 }
 
@@ -45,9 +49,25 @@
   max-width: 400px;
   width: 100%;
 }
+
+.hero-content .privacy-policy {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  opacity: 0.9;
+  font-style: italic;
+}
+.musician-app .hero-content {
+  text-align: center;
+  margin-top: 2rem;
+}
 .service-card {
   margin: 0 auto;
   background-color: #153448;
+}
+
+.about {
+  background-color: #153448 !important;
 }
 
 .support-section {
@@ -80,7 +100,7 @@
 
 /* Mobile responsive adjustments for MusicianApp */
 @media screen and (max-width: 768px) {
-  .nav-logo img {
+  .musician-app .nav-logo img {
     height: 2.5rem; /* 40px */
   }
 
@@ -94,7 +114,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .nav-logo img {
+  .musician-app .nav-logo img {
     height: 3rem; /* 32px */
   }
 

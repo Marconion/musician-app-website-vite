@@ -102,7 +102,7 @@ function App() {
             <h1>Professional software solutions</h1>
             <p>We create software solutions tailored to your needs.</p>
             <button className="cta-button">Get Started</button>
-            <div>
+            <div className="download-images-container">
               <img
                 src={app_store_img}
                 alt="App Store Img"
@@ -193,10 +193,10 @@ function App() {
                 <h4>Phone</h4>
                 <p>+381 60 123 4567</p>
               </div>
-              <div className="contact-item">
+              {/* <div className="contact-item">
                 <h4>Location</h4>
                 <p>Vase Pelagića 13, Belgrade, Serbia</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>

@@ -7,7 +7,7 @@ import google_play_img from "./assets/images/Google-Play.png";
 
 function MusicianApp({ onBackToHome }) {
   return (
-    <div className="app">
+    <div className="app musician-app">
       {/* Navbar */}
       <nav className="navbar">
         <div className="nav-container">
@@ -62,6 +62,9 @@ function MusicianApp({ onBackToHome }) {
                 />
               </div>
             </div>
+            <p href="/" className="privacy-policy">
+              * Privacy Policy
+            </p>
           </div>
         </section>
 
@@ -109,8 +112,8 @@ function MusicianApp({ onBackToHome }) {
         </section>
 
         {/* About Section */}
-        <section className="section">
-          <div className="container">
+        <section className="section about">
+          <div className="container ">
             <h2>About Musician's App</h2>
             <p>
               Musician's App is a comprehensive mobile application designed to
