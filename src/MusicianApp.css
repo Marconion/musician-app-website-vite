@@ -12,7 +12,7 @@
 
 /* MusicianApp specific navbar styling */
 .musician-app .navbar {
-  background-color: rgba(21, 52, 72, 0.75);
+  background-color: rgba(56, 80, 93, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -79,7 +79,15 @@
 }
 
 .about {
-  background-color: #153448 !important;
+  background-color: #fff5e0 !important;
+}
+
+.about h2 {
+  color: #153448;
+}
+
+.about p {
+  color: #153448;
 }
 
 .support-section {
@@ -105,9 +113,19 @@
 
 .contact-item {
   background-color: #153448;
+  box-shadow: #1a1a1a 0px 2px 4px -1px;
 }
 .support-section .contact-item p {
   color: lightgray;
+}
+
+.icon {
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: #153448;
+  margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
 /* Mobile responsive adjustments for MusicianApp */

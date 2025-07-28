@@ -5,7 +5,7 @@ import google_play_img from "./assets/images/Google-Play.png";
 import musicians_app_img from "./assets/images/logo inline.png";
 import backdrop_img from "./assets/images/backdrop.jpg";
 import backdrop1_img from "./assets/images/backdrop1.jpg";
-import MusicianApp from "./MusicianApp.jsx";
+import MusicianApp from "./MusicianApp_sr.jsx";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -108,8 +108,8 @@ function App() {
           <div className="hero-content">
             <h1>Professional software solutions</h1>
             <p>We create software solutions tailored to your needs.</p>
-            <button className="cta-button">Get Started</button>
-            <div className="download-images-container">
+            {/* <button className="cta-button">Get Started</button> */}
+            {/* <div className="download-images-container">
               <img
                 src={app_store_img}
                 alt="App Store Img"
@@ -120,7 +120,7 @@ function App() {
                 alt="Google Play Img"
                 className="fill-white w-[200px] mx-auto my-4"
               />
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -184,6 +184,8 @@ function App() {
                   style={{ cursor: "pointer" }}
                 />
               </div>
+              <div className="portfolio-item"></div>
+              <div className="portfolio-item"></div>
             </div>
           </div>
         </section>
