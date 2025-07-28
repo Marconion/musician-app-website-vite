@@ -54,16 +54,16 @@ function MusicianApp({ onBackToHome }) {
 
             <div className="app-download-section">
               <h3>Download Now</h3>
-              <div className="download-buttons">
+              <div className="download-images-container">
                 <img
                   src={app_store_img}
-                  alt="Download on App Store"
-                  className="fill-white download-btn"
+                  alt="App Store Img"
+                  className="fill-white w-[200px] mx-auto mt-12"
                 />
                 <img
                   src={google_play_img}
-                  alt="Get it on Google Play"
-                  className="fill-white download-btn"
+                  alt="Google Play Img"
+                  className="fill-white w-[200px] mx-auto my-4"
                 />
               </div>
             </div>
@@ -140,7 +140,7 @@ function MusicianApp({ onBackToHome }) {
             <div className="contact-info">
               <div className="contact-item">
                 <h4>Email</h4>
-                <p>support@musiciansapp.com</p>
+                <p>support@softivity.net</p>
               </div>
               <div className="contact-item ">
                 <h4>App Store Reviews</h4>

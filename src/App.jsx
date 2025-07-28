@@ -4,6 +4,7 @@ import app_store_img from "./assets/images/App-Store.png";
 import google_play_img from "./assets/images/Google-Play.png";
 import musicians_app_img from "./assets/images/logo inline.png";
 import backdrop_img from "./assets/images/backdrop.jpg";
+import backdrop1_img from "./assets/images/backdrop1.jpg";
 import MusicianApp from "./MusicianApp.jsx";
 
 function App() {
@@ -136,7 +137,12 @@ function App() {
         </section>
 
         {/* Services Section */}
-        <section id="services" className="section">
+        <section
+          id="services"
+          className="section"
+          style={{
+            backgroundImage: `linear-gradient(135deg, rgba(255, 245, 224, 0.9) 0%, rgba(21, 52, 72, 0.8) 75%), url(${backdrop1_img})`,
+          }}>
           <div className="container">
             <h2>Our Services</h2>
             <div className="services-grid">
