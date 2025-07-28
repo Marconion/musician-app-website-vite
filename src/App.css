@@ -46,7 +46,9 @@ html {
 /* Navbar Styles */
 .navbar {
   /* background-color: #1a1a1a; */
-  background-color: #fff5e0;
+  background-color: rgba(255, 245, 224, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
   position: fixed;
   top: 0;
@@ -127,7 +129,9 @@ html {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #dfd0b8 0%, #153448 75%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: #fff5e0;
   text-align: center;
   padding: 50px 2rem;
@@ -306,7 +310,7 @@ html {
 }
 
 .portfolio-item {
-  background: #153448;
+  background: rgba(255, 245, 224, 0.15);
   border: 1.5px solid #fff5e0;
   color: white;
   padding: 2rem 1rem; /* it was 3rem 1rem */

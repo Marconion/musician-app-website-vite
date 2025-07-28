@@ -4,6 +4,7 @@ import "./MusicianApp.css";
 import musicians_app_img from "./assets/images/logo inline.png";
 import app_store_img from "./assets/images/App-Store.png";
 import google_play_img from "./assets/images/Google-Play.png";
+import backdrop_img from "./assets/images/backdrop.jpg";
 
 function MusicianApp({ onBackToHome }) {
   return (
@@ -36,7 +37,11 @@ function MusicianApp({ onBackToHome }) {
       {/* Main Content */}
       <main className="main-content">
         {/* Hero Section */}
-        <section className="hero">
+        <section
+          className="hero"
+          style={{
+            backgroundImage: `linear-gradient(135deg, rgba(223, 208, 184, 0.8) 0%, rgba(21, 52, 72, 0.9) 75%), url(${backdrop_img})`,
+          }}>
           <div className="hero-content">
             <img
               src={musicians_app_img}
@@ -62,9 +67,11 @@ function MusicianApp({ onBackToHome }) {
                 />
               </div>
             </div>
-            <p href="/" className="privacy-policy">
+            <a
+              href="https://fortunate-fall-b9c.notion.site/Politika-privatnosti-Musician-s-App-2122430d46a5807b94aeed7074b5f573#2122430d46a580f0a1b7ea32a92e772f"
+              className="privacy-policy">
               * Privacy Policy
-            </p>
+            </a>
           </div>
         </section>
 

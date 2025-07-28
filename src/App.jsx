@@ -3,6 +3,7 @@ import "./App.css";
 import app_store_img from "./assets/images/App-Store.png";
 import google_play_img from "./assets/images/Google-Play.png";
 import musicians_app_img from "./assets/images/logo inline.png";
+import backdrop_img from "./assets/images/backdrop.jpg";
 import MusicianApp from "./MusicianApp.jsx";
 
 function App() {
@@ -97,7 +98,12 @@ function App() {
       {/* Main Content */}
       <main className="main-content">
         {/* Hero Section */}
-        <section id="home" className="hero">
+        <section
+          id="home"
+          className="hero"
+          style={{
+            backgroundImage: `linear-gradient(135deg, rgba(223, 208, 184, 0.8) 0%, rgba(21, 52, 72, 0.9) 75%), url(${backdrop_img})`,
+          }}>
           <div className="hero-content">
             <h1>Professional software solutions</h1>
             <p>We create software solutions tailored to your needs.</p>
