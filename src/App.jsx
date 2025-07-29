@@ -1,15 +1,19 @@
 import { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useNavigate,
+} from "react-router-dom";
 import "./App.css";
-import app_store_img from "./assets/images/App-Store.png";
-import google_play_img from "./assets/images/Google-Play.png";
 import musicians_app_img from "./assets/images/logo inline.png";
 import backdrop_img from "./assets/images/backdrop.jpg";
 import backdrop1_img from "./assets/images/backdrop1.jpg";
 import MusicianApp from "./MusicianApp_sr.jsx";
 
-function App() {
+function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState("home");
+  const navigate = useNavigate();
 
   const handleMusicianAppClick = () => {
     // Force immediate scroll reset using multiple methods
@@ -22,7 +26,7 @@ function App() {
       document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
     });
-    setCurrentPage("musician-app");
+    navigate("/musician-app");
   };
 
   const handleBackToHome = () => {
@@ -36,13 +40,8 @@ function App() {
       document.documentElement.scrollTop = 0;
       document.body.scrollTop = 0;
     });
-    setCurrentPage("home");
+    navigate("/");
   };
-
-  // If we're on the musician app page, render that component
-  if (currentPage === "musician-app") {
-    return <MusicianApp onBackToHome={handleBackToHome} />;
-  }
 
   return (
     <div className="app">
@@ -266,6 +265,37 @@ function App() {
         </div>
       </footer>
     </div>
+  );
+}
+
+function MusicianAppPage() {
+  const navigate = useNavigate();
+
+  const handleBackToHome = () => {
+    // Force immediate scroll reset using multiple methods
+    window.scrollTo({ top: 0, behavior: "auto" });
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+    window.pageYOffset = 0;
+    // Use requestAnimationFrame to ensure it happens immediately
+    requestAnimationFrame(() => {
+      document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+    });
+    navigate("/");
+  };
+
+  return <MusicianApp onBackToHome={handleBackToHome} />;
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/musician-app" element={<MusicianAppPage />} />
+      </Routes>
+    </Router>
   );
 }
 
