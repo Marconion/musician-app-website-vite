@@ -200,11 +200,11 @@ function HomePage() {
             <div className="contact-info">
               <div className="contact-item">
                 <h4>Email</h4>
-                <p>info@softivity.rs</p>
+                {/* <p>info@softivity.net</p> */}
               </div>
               <div className="contact-item">
                 <h4>Phone</h4>
-                <p>+381 60 123 4567</p>
+                {/* <p>+381 60 123 4567</p> */}
               </div>
               {/* <div className="contact-item">
                 <h4>Location</h4>
