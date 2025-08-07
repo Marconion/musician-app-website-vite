@@ -139,9 +139,10 @@ function HomePage() {
         <section
           id="services"
           className="section"
-          style={{
-            backgroundImage: `linear-gradient(135deg, rgba(255, 245, 224, 0.9) 0%, rgba(21, 52, 72, 0.8) 75%), url(${backdrop1_img})`,
-          }}>
+          // style={{
+          //   backgroundImage: `linear-gradient(135deg, rgba(255, 245, 224, 0.9) 0%, rgba(21, 52, 72, 0.8) 75%), url(${backdrop1_img})`,
+          // }}
+        >
           <div className="container">
             <h2>Our Services</h2>
             <div className="services-grid">
@@ -183,8 +184,8 @@ function HomePage() {
                   style={{ cursor: "pointer" }}
                 />
               </div>
-              <div className="portfolio-item"></div>
-              <div className="portfolio-item"></div>
+              {/* <div className="portfolio-item"></div> */}
+              {/* <div className="portfolio-item"></div> */}
             </div>
           </div>
         </section>
@@ -200,7 +201,7 @@ function HomePage() {
             <div className="contact-info">
               <div className="contact-item">
                 <h4>Email</h4>
-                <p>info@softivity.net</p>
+                <p>support@softivity.net</p>
               </div>
               <div className="contact-item">
                 <h4>Phone</h4>
