@@ -200,7 +200,7 @@ function HomePage() {
             <div className="contact-info">
               <div className="contact-item">
                 <h4>Email</h4>
-                {/* <p>info@softivity.net</p> */}
+                <p>info@softivity.net</p>
               </div>
               <div className="contact-item">
                 <h4>Phone</h4>
