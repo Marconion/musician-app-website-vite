@@ -272,11 +272,6 @@ html {
   text-align: center;
 }
 
-#contact .contact-item {
-  /* background: #153448 !important; */
-  /* box-shadow: #1a1a1a 0px 2px 4px -1px; */
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
