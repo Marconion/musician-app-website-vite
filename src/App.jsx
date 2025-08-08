@@ -11,7 +11,7 @@ import backdrop_img from "./assets/images/backdrop.jpg";
 import backdrop1_img from "./assets/images/backdrop1.jpg";
 import MusicianApp from "./MusicianApp_sr.jsx";
 import logo from "./assets/images/logo.png";
-import logo1 from "./assets/images/logo1.png";
+import logo1 from "./assets/images/Logo Softivity.webp";
 
 function HomePage() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -51,7 +51,7 @@ function HomePage() {
       <nav className="navbar">
         <div className="nav-container">
           <div className="nav-logo">
-            <img src={logo} alt="logo" className="w-50" />
+            <img src={logo1} alt="logo" className="w-50" />
           </div>
 
           <div className={`nav-menu ${isMenuOpen ? "active" : ""}`}>
