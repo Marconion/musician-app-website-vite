@@ -10,6 +10,7 @@ import musicians_app_img from "./assets/images/logo inline.png";
 import backdrop_img from "./assets/images/backdrop.jpg";
 import backdrop1_img from "./assets/images/backdrop1.jpg";
 import MusicianApp from "./MusicianApp_sr.jsx";
+import BrisanjeNaloga from "./BrisanjeNaloga.jsx";
 import logo from "./assets/images/logo.png";
 import logo1 from "./assets/images/Logo Softivity.webp";
 
@@ -297,6 +298,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/musician-app" element={<MusicianAppPage />} />
+        <Route path="/brisanje-naloga" element={<BrisanjeNaloga />} />
       </Routes>
     </Router>
   );

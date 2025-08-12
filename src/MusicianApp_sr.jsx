@@ -5,6 +5,7 @@ import musicians_app_img from "./assets/images/logo inline.png";
 import app_store_img from "./assets/images/App-Store.png";
 import google_play_img from "./assets/images/Google-Play.png";
 import backdrop_img from "./assets/images/backdrop.jpg";
+import { Link } from "react-router-dom";
 
 function MusicianApp({ onBackToHome }) {
   return (
@@ -66,6 +67,10 @@ function MusicianApp({ onBackToHome }) {
               className="privacy-policy">
               * Politika privatnosti
             </a>
+            <br />
+            <Link to="/brisanje-naloga" className="privacy-policy">
+              * Brisanje naloga
+            </Link>
           </div>
         </section>
 
