@@ -62,11 +62,9 @@ function MusicianApp({ onBackToHome }) {
                 />
               </div>
             </div>
-            <a
-              href="https://fortunate-fall-b9c.notion.site/Politika-privatnosti-Musician-s-App-2122430d46a5807b94aeed7074b5f573#2122430d46a580f0a1b7ea32a92e772f"
-              className="privacy-policy">
+            <Link to="/politika-privatnosti" className="privacy-policy">
               * Politika privatnosti
-            </a>
+            </Link>
             <br />
             <Link to="/brisanje-naloga" className="privacy-policy">
               * Brisanje naloga
@@ -188,6 +186,12 @@ function MusicianApp({ onBackToHome }) {
               </li>
               <li>
                 <a href="#contact">Podrška</a>
+              </li>
+              <li>
+                <Link to="/politika-privatnosti">Politika privatnosti</Link>
+              </li>
+              <li>
+                <Link to="/brisanje-naloga">Brisanje naloga</Link>
               </li>
             </ul>
           </div>

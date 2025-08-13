@@ -128,6 +128,195 @@
   vertical-align: middle;
 }
 
+/* Deletion page specific styles */
+.deletion-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.deletion-info-card {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.deletion-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #153448;
+  text-align: center;
+}
+
+.deletion-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #153448;
+  text-align: center;
+  opacity: 0.9;
+}
+
+.deletion-methods-title {
+  font-size: 1.4rem;
+  /* font-weight: 600; */
+  margin-bottom: 2rem;
+  color: #153448;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.deletion-method {
+  background-color: rgba(255, 245, 224, 0.95);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  /* border-left: 4px solid #153448; */
+}
+
+.method-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #153448;
+  margin-bottom: 1rem;
+}
+
+.method-description {
+  font-size: 1rem;
+  color: #153448;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.deletion-divider {
+  color: #fff5e0;
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.deletion-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: rgba(21, 52, 72, 0.3);
+  z-index: 1;
+}
+
+.deletion-divider span {
+  background-color: rgba(21, 52, 72, 0.1);
+  backdrop-filter: blur(10px);
+  color: #153448;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+  font-size: 1rem;
+}
+
+.contact-info-card {
+  background-color: #153448;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.contact-email {
+  color: #fff5e0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  word-break: break-word;
+}
+
+/* Privacy Policy specific styles */
+.privacy-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.privacy-updated {
+  font-size: 1rem;
+  color: #153448;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.privacy-intro {
+  font-size: 1.1rem;
+  color: #153448;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.privacy-section {
+  margin-bottom: 2rem;
+}
+
+.privacy-section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #153448;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #153448;
+  padding-bottom: 0.5rem;
+}
+
+.privacy-section-description {
+  font-size: 1rem;
+  color: #153448;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.privacy-item {
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+}
+
+.privacy-item-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #153448;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-item-description {
+  font-size: 1rem;
+  color: #153448;
+  line-height: 1.6;
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+
+.contact-detail {
+  color: #fff5e0;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.privacy-footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(21, 52, 72, 0.3);
+  text-align: center;
+}
+
+.privacy-agreement {
+  font-size: 1rem;
+  color: #153448;
+  font-style: italic;
+  margin: 0;
+}
+
 /* Mobile responsive adjustments for MusicianApp */
 @media screen and (max-width: 768px) {
   .musician-app .nav-logo img {
@@ -140,6 +329,44 @@
 
   .download-buttons {
     margin-top: 2rem;
+  }
+
+  /* Responsive styles for deletion page */
+  .deletion-content {
+    padding: 1rem;
+  }
+
+  .deletion-info-card {
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+
+  .deletion-title {
+    font-size: 2rem;
+  }
+
+  .deletion-subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .deletion-methods-title {
+    font-size: 1.2rem;
+    line-height: 1.4;
+  }
+
+  .method-title {
+    font-size: 1.1rem;
+  }
+
+  .method-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .contact-email {
+    font-size: 1rem;
+    word-break: break-all;
   }
 }
 
@@ -154,5 +381,87 @@
 
   .download-btn {
     width: 150px;
+  }
+
+  /* Mobile styles for deletion page */
+  .deletion-content {
+    padding: 0.5rem;
+  }
+
+  .deletion-info-card {
+    padding: 1rem;
+    margin: 0 0.5rem;
+  }
+
+  .deletion-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .deletion-subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .deletion-methods-title {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .method-title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .method-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-email {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .deletion-divider {
+    margin: 1rem 0;
+  }
+
+  .deletion-divider span {
+    font-size: 0.9rem;
+  }
+
+  /* Privacy Policy responsive styles */
+  .privacy-updated {
+    font-size: 0.9rem;
+  }
+
+  .privacy-intro {
+    font-size: 1rem;
+  }
+
+  .privacy-section-title {
+    font-size: 1.2rem;
+  }
+
+  .privacy-section-description {
+    font-size: 0.95rem;
+  }
+
+  .privacy-item-title {
+    font-size: 1rem;
+  }
+
+  .privacy-item-description {
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+  }
+
+  .contact-detail {
+    font-size: 0.9rem;
+  }
+
+  .privacy-agreement {
+    font-size: 0.9rem;
   }
 }
