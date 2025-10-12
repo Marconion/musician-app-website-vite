@@ -462,7 +462,7 @@ const resources = {
         projects: {
           musicianApp: {
             title: "Musician's App",
-            category: "Planiranje događaja za muzičare",
+            category: "Organizacija nastupa za muzičare",
             description:
               "Musician's App je sveobuhvatna mobilna aplikacija dizajnirana da pomogne muzičarima u organizaciji nastupa i događaja. Bilo da ste solo umetnik ili deo benda, naša aplikacija vam omogućava da efikasno upravljate svojim vremenom i izbegnete administrativne komplikacije.",
           },
