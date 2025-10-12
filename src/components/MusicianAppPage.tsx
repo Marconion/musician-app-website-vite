@@ -97,12 +97,12 @@ export default function MusicianAppPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+      <section className="py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="text-sm font-medium text-blue-600 mb-4">
-                Mobile Application
+                {t("musicianApp.mobileAppLabel")}
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 {t("musicianApp.title")}
@@ -194,9 +194,7 @@ export default function MusicianAppPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {screenshots.map((screenshot) => (
-              <div
-                key={screenshot.id}
-                className="bg-gray-100 rounded-2xl md:aspect-[9/16] flex items-center justify-center hover:shadow-lg transition-shadow">
+              <div key={screenshot.id}>
                 <div className="text-center">
                   {/* <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Play className="w-8 h-8 text-blue-600" />
@@ -205,7 +203,7 @@ export default function MusicianAppPage() {
                   <img
                     src={screenshot.img}
                     alt={screenshot.alt}
-                    className="rounded-2xl shadow-md"
+                    className="rounded-2xl shadow-md w-5/6 sm:w-4/5 md:w-full mx-auto"
                   />
                 </div>
               </div>
@@ -293,14 +291,6 @@ export default function MusicianAppPage() {
             {t("musicianApp.cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {/* <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors">
-              Download for iOS
-            </button>
-            <a
-              className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors"
-              href="https://play.google.com/store/apps/details?id=com.marko4yu.musiciansapp2025exposupabase">
-              <button>Download for Android</button>
-            </a> */}
             <StoreBadges />
           </div>
 
