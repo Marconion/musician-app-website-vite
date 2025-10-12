@@ -14,7 +14,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/musician-app" element={<MusicianAppPage />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/politika-privatnosti" element={<PrivacyPolicy />} />
           <Route path="/account-deletion" element={<AccountDeletion />} />
         </Routes>
         <Footer />

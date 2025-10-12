@@ -296,7 +296,7 @@ export default function MusicianAppPage() {
           {/* Privacy Policy Link */}
           <div className="mt-8 space-y-2">
             <Link
-              to="/privacy-policy"
+              to="/politika-privatnosti"
               className="block text-blue-100 hover:text-white underline transition-colors">
               {t("musicianApp.privacyPolicyLink")}
             </Link>
