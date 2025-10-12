@@ -1,6 +1,8 @@
-import { Code2, Linkedin, Twitter, Github, Mail } from 'lucide-react';
+import { Code2, Linkedin, Twitter, Github, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
 
   return (
@@ -13,43 +15,111 @@ export default function Footer() {
               <span className="text-2xl font-bold text-white">Softivity</span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
-              Transforming ideas into exceptional software and mobile solutions. We build digital products that drive business growth and deliver outstanding user experiences.
+              {t("footer.description")}
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="mailto:hello@softivity.com" className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+              <a
+                href="mailto:hello@softivity.com"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
 
           <div>
-            <h3 className="text-white font-bold mb-4">Services</h3>
+            <h3 className="text-white font-bold mb-4">
+              {t("footer.services")}
+            </h3>
             <ul className="space-y-2">
-              <li><a href="#services" className="hover:text-blue-500 transition-colors">Mobile Development</a></li>
-              <li><a href="#services" className="hover:text-blue-500 transition-colors">Web Development</a></li>
-              <li><a href="#services" className="hover:text-blue-500 transition-colors">Custom Software</a></li>
-              <li><a href="#services" className="hover:text-blue-500 transition-colors">Cloud Solutions</a></li>
-              <li><a href="#services" className="hover:text-blue-500 transition-colors">Consulting</a></li>
+              <li>
+                <a
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors">
+                  Mobile Development
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors">
+                  Web Development
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors">
+                  Custom Software
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors">
+                  Cloud Solutions
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors">
+                  Consulting
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white font-bold mb-4">Company</h3>
+            <h3 className="text-white font-bold mb-4">
+              {t("footer.quickLinks")}
+            </h3>
             <ul className="space-y-2">
-              <li><a href="#portfolio" className="hover:text-blue-500 transition-colors">Portfolio</a></li>
-              <li><a href="#process" className="hover:text-blue-500 transition-colors">Our Process</a></li>
-              <li><a href="#contact" className="hover:text-blue-500 transition-colors">Contact Us</a></li>
-              <li><a href="#" className="hover:text-blue-500 transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-blue-500 transition-colors">Blog</a></li>
+              <li>
+                <a
+                  href="#portfolio"
+                  className="hover:text-blue-500 transition-colors">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#process"
+                  className="hover:text-blue-500 transition-colors">
+                  Our Process
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="hover:text-blue-500 transition-colors">
+                  Contact Us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Blog
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -57,12 +127,18 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © {currentYear} Softivity. All rights reserved.
+              © {currentYear} Softivity. {t("footer.rights")}
             </p>
             <div className="flex space-x-6 text-sm">
-              <a href="#" className="hover:text-blue-500 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-blue-500 transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-blue-500 transition-colors">Cookie Policy</a>
+              <a href="#" className="hover:text-blue-500 transition-colors">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-blue-500 transition-colors">
+                Terms of Service
+              </a>
+              <a href="#" className="hover:text-blue-500 transition-colors">
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>

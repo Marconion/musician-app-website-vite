@@ -1,42 +1,53 @@
-import { Lightbulb, Pencil, Code, Rocket } from 'lucide-react';
-
-const steps = [
-  {
-    icon: Lightbulb,
-    title: 'Discovery & Planning',
-    description: 'We start by understanding your business goals, target audience, and project requirements through detailed consultations.',
-    points: ['Requirements Analysis', 'Market Research', 'Project Roadmap', 'Technology Selection']
-  },
-  {
-    icon: Pencil,
-    title: 'Design & Prototyping',
-    description: 'Our design team creates intuitive user interfaces and interactive prototypes to visualize your solution.',
-    points: ['UX/UI Design', 'Wireframing', 'Interactive Prototypes', 'User Testing']
-  },
-  {
-    icon: Code,
-    title: 'Development & Testing',
-    description: 'Expert developers build your solution using agile methodology with regular updates and quality assurance.',
-    points: ['Agile Development', 'Code Reviews', 'Automated Testing', 'Performance Optimization']
-  },
-  {
-    icon: Rocket,
-    title: 'Launch & Support',
-    description: 'We deploy your solution and provide ongoing maintenance, updates, and technical support.',
-    points: ['Deployment', 'Training', 'Monitoring', 'Continuous Improvement']
-  }
-];
+import { Lightbulb, Pencil, Code, Rocket } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Process() {
+  const { t } = useTranslation();
+
+  const steps = [
+    {
+      icon: Lightbulb,
+      title: t("process.steps.discovery.title"),
+      description: t("process.steps.discovery.description"),
+      points: t("process.steps.discovery.points", {
+        returnObjects: true,
+      }) as string[],
+    },
+    {
+      icon: Pencil,
+      title: t("process.steps.design.title"),
+      description: t("process.steps.design.description"),
+      points: t("process.steps.design.points", {
+        returnObjects: true,
+      }) as string[],
+    },
+    {
+      icon: Code,
+      title: t("process.steps.development.title"),
+      description: t("process.steps.development.description"),
+      points: t("process.steps.development.points", {
+        returnObjects: true,
+      }) as string[],
+    },
+    {
+      icon: Rocket,
+      title: t("process.steps.launch.title"),
+      description: t("process.steps.launch.description"),
+      points: t("process.steps.launch.points", {
+        returnObjects: true,
+      }) as string[],
+    },
+  ];
+
   return (
     <section id="process" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our Process
+            {t("process.title")}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A proven methodology that delivers results
+            {t("process.subtitle")}
           </p>
         </div>
 
@@ -49,7 +60,9 @@ export default function Process() {
                 </div>
 
                 <div className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-sm">
-                  <span className="text-lg font-bold text-blue-600">{index + 1}</span>
+                  <span className="text-lg font-bold text-blue-600">
+                    {index + 1}
+                  </span>
                 </div>
 
                 <h3 className="text-xl font-bold text-gray-900 mb-3">

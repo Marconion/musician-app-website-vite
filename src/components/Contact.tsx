@@ -1,37 +1,48 @@
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { useState } from 'react';
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    message: ''
+    name: "",
+    email: "",
+    company: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', company: '', message: '' });
+    console.log("Form submitted:", formData);
+    alert(
+      t(
+        "contact.form.successMessage",
+        "Thank you for your message! We will get back to you soon."
+      )
+    );
+    setFormData({ name: "", email: "", company: "", message: "" });
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Let's Build Something Amazing
+            {t("contact.title")}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Ready to start your project? Get in touch with our team
+            {t("contact.subtitle")}
           </p>
         </div>
 
@@ -42,7 +53,9 @@ export default function Contact() {
                 Get In Touch
               </h3>
               <p className="text-gray-600 leading-relaxed mb-8">
-                We'd love to hear about your project. Whether you need a mobile app, web application, or custom software solution, our team is ready to help bring your vision to life.
+                We'd love to hear about your project. Whether you need a mobile
+                app, web application, or custom software solution, our team is
+                ready to help bring your vision to life.
               </p>
             </div>
 
@@ -53,7 +66,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Email Us</h4>
-                  <a href="mailto:hello@softivity.com" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <a
+                    href="mailto:hello@softivity.com"
+                    className="text-gray-600 hover:text-blue-600 transition-colors">
                     hello@softivity.com
                   </a>
                 </div>
@@ -65,7 +80,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Call Us</h4>
-                  <a href="tel:+1234567890" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  <a
+                    href="tel:+1234567890"
+                    className="text-gray-600 hover:text-blue-600 transition-colors">
                     +1 (234) 567-890
                   </a>
                 </div>
@@ -78,7 +95,8 @@ export default function Contact() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Visit Us</h4>
                   <p className="text-gray-600">
-                    123 Innovation Drive<br />
+                    123 Innovation Drive
+                    <br />
                     Tech Valley, CA 94000
                   </p>
                 </div>
@@ -111,7 +129,9 @@ export default function Contact() {
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-semibold text-gray-700 mb-2">
                   Your Name *
                 </label>
                 <input
@@ -127,7 +147,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label
+                  htmlFor="email"
+                  className="block text-sm font-semibold text-gray-700 mb-2">
                   Email Address *
                 </label>
                 <input
@@ -143,7 +165,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="company" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label
+                  htmlFor="company"
+                  className="block text-sm font-semibold text-gray-700 mb-2">
                   Company Name
                 </label>
                 <input
@@ -158,7 +182,9 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-semibold text-gray-700 mb-2">
                   Project Details *
                 </label>
                 <textarea
@@ -175,8 +201,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
-              >
+                className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
                 <span>Send Message</span>
                 <Send className="w-5 h-5" />
               </button>
