@@ -1,6 +1,5 @@
 import {
   ArrowLeft,
-  Download,
   Star,
   UserPlus,
   Calendar,
