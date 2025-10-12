@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50">
+      className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <AnimatedSection animationType="fadeUp" delay={0}>
@@ -49,7 +49,7 @@ export default function Contact() {
           </AnimatedSection>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12">
           <AnimatedSection animationType="fadeLeft" delay={100}>
             <div className="space-y-8">
               <div>
@@ -111,7 +111,7 @@ export default function Contact() {
                 </div> */}
               </div>
 
-              <div className="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl p-8 text-white">
+              <div className="bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl p-4 sm:p-6 lg:p-8 text-white">
                 <h4 className="text-xl font-bold mb-3">
                   {t("contact.whyChoose.title")}
                 </h4>
@@ -138,7 +138,7 @@ export default function Contact() {
           </AnimatedSection>
 
           <AnimatedSection animationType="fadeRight" delay={200}>
-            <div className="bg-white rounded-2xl shadow-xl p-8">
+            <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
@@ -153,7 +153,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors box-border"
                     placeholder={t("contact.form.namePlaceholder")}
                   />
                 </div>
@@ -171,7 +171,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors box-border"
                     placeholder={t("contact.form.emailPlaceholder")}
                   />
                 </div>
@@ -188,7 +188,7 @@ export default function Contact() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors box-border"
                     placeholder={t("contact.form.companyPlaceholder")}
                   />
                 </div>
@@ -206,7 +206,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors resize-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors resize-none box-border"
                     placeholder={t("contact.form.messagePlaceholder")}
                   />
                 </div>
