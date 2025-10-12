@@ -1,17 +1,49 @@
 import { Menu, X, Code2, Globe } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
+import Logo from "../assets/Logo Softivity.webp";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
+    // If we're not on the home page, navigate to home first
+    if (location.pathname !== "/") {
+      navigate("/");
+      // Wait a bit for the page to load, then scroll
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      // We're already on home page, just scroll
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
+    setIsMenuOpen(false);
+  };
+
+  const navigateToHome = () => {
+    if (location.pathname !== "/") {
+      // If we're not on home page, navigate to home
+      navigate("/");
+      // Wait a bit for the page to load, then scroll to top
+      setTimeout(() => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }, 100);
+    } else {
+      // We're already on home page, just scroll to top
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+    setIsMenuOpen(false);
   };
 
   const changeLanguage = (lng: string) => {
@@ -24,11 +56,11 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div
             className="flex items-center space-x-2 cursor-pointer"
-            onClick={() => scrollToSection("hero")}>
+            onClick={navigateToHome}>
             <img
-              src="./src/assets/Logo Softivity.webp"
+              src={Logo}
               alt="Softivity Logo"
-              className="w-max h-16"
+              className="w-44 md:w-1/4 lg:w-1/4"
             />
           </div>
 
@@ -38,11 +70,11 @@ export default function Header() {
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               {t("nav.services")}
             </button>
-            <button
+            {/* <button
               onClick={() => scrollToSection("solutions")}
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               {t("nav.solutions")}
-            </button>
+            </button> */}
             {/* <button
               onClick={() => scrollToSection("process")}
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
@@ -60,14 +92,14 @@ export default function Header() {
                 onChange={(e) => changeLanguage(e.target.value)}
                 value={i18n.language}
                 className="text-gray-700 bg-transparent border border-gray-300 rounded px-3 py-1 focus:outline-none focus:border-blue-600 cursor-pointer">
-                <option value="en">🇺🇸 EN</option>
-                <option value="sr">🇷🇸 SR</option>
+                <option value="sr">Srpski</option>
+                <option value="en">English</option>
               </select>
             </div>
 
             <button
               onClick={() => scrollToSection("contact")}
-              className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+              className="bg-blue-600 text-white px-10 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">
               {t("nav.contact")}
             </button>
           </div>
@@ -112,7 +144,7 @@ export default function Header() {
                 onChange={(e) => changeLanguage(e.target.value)}
                 value={i18n.language}
                 className="w-full text-gray-700 bg-transparent border border-gray-300 rounded px-3 py-2 focus:outline-none focus:border-blue-600">
-                <option value="en">🇺🇸 English</option>
+                <option value="en">🇺🇸 Engleski</option>
                 <option value="sr">🇷🇸 Srpski</option>
               </select>
             </div>

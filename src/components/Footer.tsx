@@ -1,5 +1,7 @@
-import { Code2, Linkedin, Twitter, Github, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { SiInstagram } from "@icons-pack/react-simple-icons";
 import { useTranslation } from "react-i18next";
+import Logo from "../assets/Logo Softivity.webp";
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -10,33 +12,39 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <Code2 className="w-8 h-8 text-blue-500" strokeWidth={2.5} />
-              <span className="text-2xl font-bold text-white">Softivity</span>
+            <div className="flex items-center space-x-2 mb-4 bg-white p-2 rounded-lg w-max">
+              <img src={Logo} alt="Softivity Logo" className="w-40" />
+              {/* <Code2 className="w-8 h-8 text-blue-500" strokeWidth={2.5} /> */}
+              {/* <span className="text-2xl font-bold text-white">Softivity</span> */}
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed max-w-md">
               {t("footer.description")}
             </p>
             <div className="flex space-x-4">
-              <a
+              {/* <a
                 href="#"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Linkedin className="w-5 h-5" />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="#"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Twitter className="w-5 h-5" />
-              </a>
-              <a
+              </a> */}
+              {/* <a
                 href="#"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Github className="w-5 h-5" />
-              </a>
+              </a> */}
               <a
                 href="mailto:hello@softivity.com"
                 className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
                 <Mail className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.instagram.com/musicians_app?igsh=MTZoY3kwcXg4cDdjNQ==/"
+                className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors">
+                <SiInstagram className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -67,7 +75,7 @@ export default function Footer() {
                   Custom Software
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="#services"
                   className="hover:text-blue-500 transition-colors">
@@ -80,7 +88,7 @@ export default function Footer() {
                   className="hover:text-blue-500 transition-colors">
                   Consulting
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -110,7 +118,7 @@ export default function Footer() {
                   Contact Us
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="hover:text-blue-500 transition-colors">
                   Careers
                 </a>
@@ -119,7 +127,7 @@ export default function Footer() {
                 <a href="#" className="hover:text-blue-500 transition-colors">
                   Blog
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
@@ -129,7 +137,7 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               © {currentYear} Softivity. {t("footer.rights")}
             </p>
-            <div className="flex space-x-6 text-sm">
+            {/* <div className="flex space-x-6 text-sm">
               <a href="#" className="hover:text-blue-500 transition-colors">
                 Privacy Policy
               </a>
@@ -139,7 +147,7 @@ export default function Footer() {
               <a href="#" className="hover:text-blue-500 transition-colors">
                 Cookie Policy
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

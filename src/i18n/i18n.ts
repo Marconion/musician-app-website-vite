@@ -11,7 +11,7 @@ const resources = {
         solutions: "Solutions",
         process: "Process",
         portfolio: "Portfolio",
-        contact: "Contact Us",
+        contact: "Contact",
       },
       // Hero Section
       hero: {
@@ -159,16 +159,153 @@ const resources = {
             "Real-time financial analytics dashboard for investment management.",
         },
       },
+      // Musician App Section
+      musicianApp: {
+        title: "Musician App",
+        subtitle:
+          "A comprehensive mobile application designed for musicians to create, collaborate, and perform music seamlessly. Built with React Native for cross-platform compatibility.",
+        keyFeatures: {
+          title: "Key Features",
+          subtitle:
+            "Discover the powerful features that make this app perfect for musicians",
+          addCollaborators: {
+            title: "Adding Collaborators",
+            description:
+              "If you have many collaborators or band members, easily invite them to your collaboration group. The app works on the principle of closed groups, which means only members that you invited to your group of associates can access your events and information for those events.",
+          },
+          createEvents: {
+            title: "Creating Events",
+            description:
+              "Create and manage gigs easily. Enter all necessary information and positions you need for that event. Invite all collaborators for specific positions with one click. You can also define a calling hierarchy.",
+          },
+          communication: {
+            title: "Communication",
+            description:
+              "Seamless communication through  chat and notifications that keep you informed at all times. No more searching for messages in various apps (WhatsApp, Viber, Messenger, SMS, etc.). All work-related information is in one place.",
+          },
+          eventTracking: {
+            title: "Event Tracking",
+            description:
+              "Always know the status of your events, who you're working with, what still needs to be done, and where the event is taking place. In case of any changes, easily modify all event-related information.",
+          },
+        },
+        privacyPolicy: {
+          title: "Musician's App - Privacy Policy and Data Protection",
+          updated: "Updated: June 2025",
+          backToApp: "Back to Musician's App",
+          intro:
+            'The Musician\'s App application, owned by Softivity (hereinafter: "we"), respects your privacy. This privacy policy explains how we collect, use, and store user data.',
+          dataCollection: {
+            title: "1. Data We Collect",
+            camera: {
+              title: "• Camera and Photos:",
+              description:
+                "Camera and gallery access is used exclusively for uploading profile pictures or sharing images within the application. Photos are not sent to our server without your permission.",
+            },
+            location: {
+              title: "• Location:",
+              description:
+                "Location is used to display your position on the map (e.g., for finding events or venues) and is not shared with third parties.",
+            },
+            notifications: {
+              title: "• Notifications:",
+              description:
+                "We use notifications for event reminders and app interactions. You can always disable notifications in your device settings.",
+            },
+          },
+          dataUsage: {
+            title: "2. Data Usage",
+            description:
+              "The data we collect is used exclusively for app functionality and improving user experience. We do not share your data with third parties.",
+          },
+          security: {
+            title: "3. Security",
+            description:
+              "We implement appropriate technical and organizational measures to protect your personal data from unauthorized access, loss, or misuse. Although we do everything to keep data secure, we cannot guarantee absolute protection in every case.",
+          },
+          userRights: {
+            title: "4. User Rights",
+            description:
+              "You have the right to request deletion or access to personal data. For all requests, contact us via email.",
+          },
+          contact: {
+            title: "5. Contact",
+            description:
+              "For all privacy-related questions, you can contact us:",
+            company: "Softivity",
+            email: "support@softivity.net",
+          },
+          consent:
+            "By using this application, you agree to this privacy policy.",
+        },
+        privacyPolicyLink: "Privacy Policy",
+        accountDeletion: {
+          title: "Account Deletion",
+          subtitle:
+            "Information about deleting your user account from the Musician's App application.",
+          intro:
+            "You can request deletion of your account and all associated data at any time. There are two ways:",
+          method1: {
+            title: "1. Within the app",
+            description:
+              "Open the app, go to the Settings menu and select the Delete Account option. After confirmation, all your data will be permanently removed.",
+          },
+          method2: {
+            title: "2. Email for account deletion",
+            email: "support@softivity.net",
+            description:
+              "Please include your username or email address associated with the account you want to delete in the email.",
+          },
+          backToApp: "Back to Musician's App",
+        },
+        accountDeletionLink: "Account Deletion",
+        technologyStack: {
+          title: "Technology Stack",
+          subtitle: "Built with modern technologies for optimal performance",
+          frontend: "Frontend",
+          backend: "Backend",
+          database: "Database",
+        },
+        cta: {
+          title: "Ready to Start Your Musical Journey?",
+          subtitle:
+            "Join thousands of musicians who are already using our app to create amazing music.",
+        },
+        screenshots: {
+          title: "App Screenshots",
+          subtitle: "Take a look at the beautiful and intuitive interface",
+          eventList: "Event List",
+          inviteList: "Invite List",
+          collaborationView: "Collaboration View",
+          eventCalendar: "Event Calendar",
+        },
+      },
       // Contact Section
       contact: {
         title: "Let's Build Something Amazing",
         subtitle: "Ready to start your project? Get in touch with our team",
+        getInTouch: {
+          title: "Get In Touch",
+          description:
+            "We'd love to hear about your project. Whether you need a mobile app, web application, or custom software solution, our team is ready to help bring your vision to life.",
+        },
+        whyChoose: {
+          title: "Why Choose Softivity?",
+          reason1: "Cause we care about your success",
+          reason2: "Cause we value your input",
+          reason3: "Dedicated support and maintenance",
+          reason4: "Agile methodology and transparent communication",
+        },
         form: {
-          name: "Your Name",
-          email: "Email Address",
+          name: "Your Name *",
+          email: "Email Address *",
           company: "Company Name",
-          message: "Message",
+          message: "Project Details *",
           submit: "Send Message",
+          namePlaceholder: "John Doe",
+          emailPlaceholder: "john@company.com",
+          companyPlaceholder: "Your Company",
+          messagePlaceholder: "Tell us about your project...",
           successMessage:
             "Thank you for your message! We will get back to you soon.",
         },
@@ -323,7 +460,7 @@ const resources = {
         viewProject: "Pogledaj Projekat",
         projects: {
           musicianApp: {
-            title: "Aplikacija za Muzičare",
+            title: "Musician's App",
             category: "Planiranje događaja za muzičare",
             description:
               "Musician's App je sveobuhvatna mobilna aplikacija dizajnirana da pomogne muzičarima u organizaciji nastupa i događaja. Bilo da ste solo umetnik ili deo benda, naša aplikacija vam omogućava da efikasno upravljate svojim vremenom i izbegnete administrativne komplikacije.",
@@ -345,17 +482,155 @@ const resources = {
             "Dashboard za finansijsku analitiku u realnom vremenu za upravljanje investicijama.",
         },
       },
+      // Musician App Section
+      musicianApp: {
+        title: "Musician's App",
+        subtitle:
+          "Sveobuhvatna mobilna aplikacija dizajnirana za muzičare da kreiraju, sarađuju i izvode muziku besprekorno. Izgrađena sa React Native za cross-platform kompatibilnost.",
+        keyFeatures: {
+          title: "Ključne Funkcionalnosti",
+          subtitle:
+            "Otkrijte moćne funkcionalnosti koje čine ovu aplikaciju savršenom za muzičare",
+          addCollaborators: {
+            title: "Dodavanje saradnika",
+            description:
+              "Ako imate mnogo saradnika ili članova benda, lako ih pozovite u svoju grupu saradnika. Aplikacija funkcioniše po principu zatvorenih grupa, što znači da samo članovi, koji su članovi Vaše grupe saradnika, mogu da pristupe vašim događajima i informacijama vezanim za iste.",
+          },
+          createEvents: {
+            title: "Kreiranje događaja",
+            description:
+              "Kreirajte i upravljajte svirkama jednostavno. Unesite sve neophodne informacije i pozicije koje su vam potrebne za taj događaj. Pozovite sve saradnike za određene pozicije jednim klikom. Takođe možete definisati hijerarhiju pozivanja.",
+          },
+          communication: {
+            title: "Komunikacija",
+            description:
+              "Neometana komunikacija putem četa i notifikacija koje Vas drže informisanim u svakom trenutku. Nema više traženja poruka u raznim aplikacijama (WhatsApp, Viber, Messenger, SMS itd.). Sve informacije vezane za Vaš posao su na jednom mestu.",
+          },
+          eventTracking: {
+            title: "Praćenje događaja",
+            description:
+              "Uvek znajte status vaših događaja, sa kim radite, šta još treba da se uradi i gde se događaj održava. U slučaju nekih promena, lako promenite sve informacije vezane za događaj.",
+          },
+        },
+        privacyPolicy: {
+          title: "Musician's App - Politika privatnosti i zaštite podataka",
+          updated: "Ažurirano: jun 2025.",
+          backToApp: "Nazad na Musician's App",
+          intro:
+            "Aplikacija Musician's App, u vlasništvu kompanije Softivity (u daljem tekstu: 'mi'), poštuje vašu privatnost. Ova politika privatnosti objašnjava kako prikupljamo, koristimo i čuvamo podatke korisnika.",
+          dataCollection: {
+            title: "1. Podaci koje prikupljamo",
+            camera: {
+              title: "• Kamera i fotografije:",
+              description:
+                "Pristup kameri i galeriji koristi se isključivo za učitavanje profilne slike ili deljenje slika unutar aplikacije. Fotografije se ne šalju na naš server bez vaše dozvole.",
+            },
+            location: {
+              title: "• Lokacija:",
+              description:
+                "Lokacija se koristi kako bi se prikazala vaša pozicija na mapi (npr. za pronalaženje događaja ili mesta) i nije deljena sa trećim stranama.",
+            },
+            notifications: {
+              title: "• Obaveštenja:",
+              description:
+                "Koristimo obaveštenja za podsetnike u vezi sa događajima i interakcijama u aplikaciji. Uvek možete isključiti obaveštenja u podešavanjima uređaja.",
+            },
+          },
+          dataUsage: {
+            title: "2. Korišćenje podataka",
+            description:
+              "Podaci koje prikupljamo koriste se isključivo za funkcionalnosti aplikacije i poboljšanje korisničkog iskustva. Ne delimo vaše podatke sa trećim licima.",
+          },
+          security: {
+            title: "3. Bezbednost",
+            description:
+              "Primenjujemo odgovarajuće tehničke i organizacione mere kako bismo zaštitili vaše lične podatke od neovlašćenog pristupa, gubitka ili zloupotrebe. Iako činimo sve da podaci budu sigurni, ne možemo garantovati apsolutnu zaštitu u svakom slučaju.",
+          },
+          userRights: {
+            title: "4. Prava korisnika",
+            description:
+              "Imate pravo da zatražite brisanje ili pristup ličnim podacima. Za sve zahteve, kontaktirajte nas putem e-pošte.",
+          },
+          contact: {
+            title: "5. Kontakt",
+            description:
+              "Za sva pitanja u vezi sa privatnošću možete nas kontaktirati:",
+            company: "Softivity",
+            email: "support@softivity.net",
+          },
+          consent:
+            "Korišćenjem ove aplikacije, saglasni ste sa ovom politikom privatnosti.",
+        },
+        privacyPolicyLink: "Politika privatnosti",
+        accountDeletion: {
+          title: "Brisanje naloga",
+          subtitle:
+            "Informacije o brisanju korisničkog naloga iz Musician's App aplikacije.",
+          intro:
+            "U svakom trenutku možete zatražiti brisanje svog naloga i svih povezanih podataka. Postoje dva načina:",
+          method1: {
+            title: "1. Unutar aplikacije",
+            description:
+              "Otvorite aplikaciju, idite u meni Podešavanja i izaberite opciju Obriši nalog. Nakon potvrde, svi vaši podaci će biti trajno uklonjeni.",
+          },
+          method2: {
+            title: "2. Email za brisanje naloga",
+            email: "support@softivity.net",
+            description:
+              "Molimo vas da u email-u navedete vaš username ili email adresu povezanu sa nalogom koji želite da obrišete.",
+          },
+          backToApp: "Nazad na Musician's App",
+        },
+        accountDeletionLink: "Brisanje naloga",
+        technologyStack: {
+          title: "Tehnološki Stek",
+          subtitle:
+            "Izgrađeno sa modernim tehnologijama za optimalne performanse",
+          frontend: "Frontend",
+          backend: "Backend",
+          database: "Baza Podataka",
+        },
+        cta: {
+          title: "Spremni ste da počnete svoje muzičko putovanje?",
+          subtitle:
+            "Pridružite se hiljadama muzičara koji već koriste našu aplikaciju za kreiranje neverovatne muzike.",
+        },
+        screenshots: {
+          title: "Slike Aplikacije",
+          subtitle: "Pogledajte lep i intuitivan interfejs",
+          eventList: "Lista Događaja",
+          inviteList: "Lista Poziva",
+          collaborationView: "Pregled Saradnje",
+          eventCalendar: "Kalendar Događaja",
+        },
+      },
       // Contact Section
       contact: {
         title: "Hajde da Izgradimo Nešto Neverovatno",
         subtitle:
           "Spremni ste da pokrenete projekat? Stupite u kontakt sa našim timom",
+        getInTouch: {
+          title: "Stupite u Kontakt",
+          description:
+            "Voleli bismo da čujemo o vašem projektu. Bilo da vam treba mobilna aplikacija, web aplikacija ili prilagođeno softversko rešenje, naš tim je spreman da pomogne u ostvarivanju vaše vizije.",
+        },
+        whyChoose: {
+          title: "Zašto Izabrati Softivity?",
+          reason1: "Jer nam je stalo do vašeg uspeha",
+          reason2: "Jer cenimo vaš doprinos",
+          reason3: "Posvećena podrška i održavanje",
+          reason4: "Agile metodologija i transparentna komunikacija",
+        },
         form: {
-          name: "Vaše Ime",
-          email: "Email Adresa",
+          name: "Vaše Ime *",
+          email: "Email Adresa *",
           company: "Naziv Kompanije",
-          message: "Poruka",
+          message: "Detalji Projekta *",
           submit: "Pošalji Poruku",
+          namePlaceholder: "Marko Petrović",
+          emailPlaceholder: "marko@kompanija.com",
+          companyPlaceholder: "Vaša Kompanija",
+          messagePlaceholder: "Recite nam o vašem projektu...",
           successMessage: "Hvala vam na poruci! Odgovoriće vam uskoro.",
         },
         info: {

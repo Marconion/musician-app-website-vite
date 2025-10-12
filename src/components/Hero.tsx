@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import HeroImage from "../assets/Logo Softivity - no text.png";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -14,7 +15,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-50 via-white to-gray-50">
+      className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-200 via-white to-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
@@ -51,6 +52,9 @@ export default function Hero() {
           </div>
 
           <div className="relative">
+            <img src={HeroImage} alt="Hero" className="w-full h-auto" />
+          </div>
+          {/* <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-3xl transform rotate-3 opacity-20"></div>
             <div className="relative bg-white rounded-3xl shadow-2xl p-8 transform hover:scale-105 transition-transform duration-300">
               <div className="space-y-6">
@@ -73,7 +77,7 @@ export default function Hero() {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
