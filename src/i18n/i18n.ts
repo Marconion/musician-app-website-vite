@@ -164,7 +164,7 @@ const resources = {
         mobileAppLabel: "Mobile Application",
         title: "Musician App",
         subtitle:
-          "A comprehensive mobile application designed for musicians to create, collaborate, and perform music seamlessly. Built with React Native for cross-platform compatibility.",
+          "A comprehensive mobile application designed for singers, musicians, and managers that facilitates performance organization and collaboration. Built for Android and iOS platforms.",
         keyFeatures: {
           title: "Key Features",
           subtitle:
@@ -488,7 +488,7 @@ const resources = {
         mobileAppLabel: "Mobilna Aplikacija",
         title: "Musician's App",
         subtitle:
-          "Sveobuhvatna mobilna aplikacija dizajnirana za muzičare da kreiraju, sarađuju i izvode muziku besprekorno. Izgrađena sa React Native za cross-platform kompatibilnost.",
+          "Sveobuhvatna mobilna aplikacija dizajnirana za pevače, pevačice, muzičare i menadžere koja olakšava organizaciju nastupa i saradnju. Napravljena za Android i iOS platforme.",
         keyFeatures: {
           title: "Ključne Funkcionalnosti",
           subtitle:
