@@ -2,6 +2,7 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AnimatedSection } from "./AnimatedSection";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const { t } = useTranslation();
@@ -11,17 +12,40 @@ export default function Contact() {
     company: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert(
-      t(
-        "contact.form.successMessage",
-        "Thank you for your message! We will get back to you soon."
-      )
-    );
-    setFormData({ name: "", email: "", company: "", message: "" });
+    setIsLoading(true);
+
+    try {
+      // Konfiguracija EmailJS (trebate da postavite svoje ključeve)
+      await emailjs.send(
+        "service_2krdp3k", // Service ID iz EmailJS dashboard-a
+        "template_merzmk9", // Template ID iz EmailJS dashboard-a
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          company: formData.company,
+          message: formData.message,
+          to_email: "support@softivity.net",
+        },
+        "rzg-IM__5DhzYYJ9U" // Public Key iz EmailJS dashboard-a
+      );
+
+      alert(
+        t(
+          "contact.form.successMessage"
+          // "Thank you for your message! We will get back to you soon."
+        )
+      );
+      setFormData({ name: "", email: "", company: "", message: "" });
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Greška pri slanju poruke. Molimo pokušajte ponovo.");
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (
@@ -213,8 +237,11 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
-                  <span>{t("contact.form.submit")}</span>
+                  disabled={isLoading}
+                  className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors font-semibold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed">
+                  <span>
+                    {isLoading ? "Šalje se..." : t("contact.form.submit")}
+                  </span>
                   <Send className="w-5 h-5" />
                 </button>
               </form>

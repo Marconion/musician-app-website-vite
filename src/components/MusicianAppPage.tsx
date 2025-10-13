@@ -239,7 +239,7 @@ export default function MusicianAppPage() {
           </div>
 
           <div className="bg-white rounded-3xl p-8 shadow-lg">
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               <div className="text-center">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
                   {t("musicianApp.technologyStack.frontend")}
