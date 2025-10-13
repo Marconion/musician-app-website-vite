@@ -16,6 +16,7 @@ import screen_2 from "../assets/screenshots/3.jpg";
 import screen_3 from "../assets/screenshots/4.jpg";
 import screen_4 from "../assets/screenshots/2.jpg";
 import { StoreBadges } from "./StoreBadges";
+import { AnimatedSection } from "./AnimatedSection";
 
 export default function MusicianAppPage() {
   const [isVisible, setIsVisible] = useState(false);
@@ -103,12 +104,17 @@ export default function MusicianAppPage() {
               <div className="text-sm font-medium text-blue-600 mb-4">
                 {t("musicianApp.mobileAppLabel")}
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                {t("musicianApp.title")}
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                {t("musicianApp.subtitle")}
-              </p>
+
+              <AnimatedSection animationType="fadeLeft">
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                  {t("musicianApp.title")}
+                </h1>
+              </AnimatedSection>
+              <AnimatedSection animationType="fadeRight" delay={100}>
+                <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                  {t("musicianApp.subtitle")}
+                </p>
+              </AnimatedSection>
 
               <div className="flex flex-wrap gap-3 mb-8">
                 <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">
@@ -137,11 +143,16 @@ export default function MusicianAppPage() {
             </div>
 
             <div className="lg:text-right">
-              <img
-                src={Cover}
-                alt="Musician App"
-                className="w-full max-w-md mx-auto lg:ml-auto rounded-3xl shadow-2xl"
-              />
+              <AnimatedSection
+                animationType="fadeScale"
+                delay={300}
+                threshold={0.1}>
+                <img
+                  src={Cover}
+                  alt="Musician App"
+                  className="w-full max-w-md mx-auto lg:ml-auto rounded-3xl shadow-2xl"
+                />
+              </AnimatedSection>
             </div>
           </div>
         </div>
@@ -192,8 +203,12 @@ export default function MusicianAppPage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {screenshots.map((screenshot) => (
-              <div key={screenshot.id}>
+            {screenshots.map((screenshot, index) => (
+              <AnimatedSection
+                key={screenshot.id}
+                animationType="fadeUp"
+                delay={index * 150}
+                threshold={0.1}>
                 <div className="text-center">
                   {/* <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Play className="w-8 h-8 text-blue-600" />
@@ -205,7 +220,7 @@ export default function MusicianAppPage() {
                     className="rounded-2xl shadow-md w-5/6 sm:w-4/5 md:w-full mx-auto"
                   />
                 </div>
-              </div>
+              </AnimatedSection>
             ))}
           </div>
         </div>

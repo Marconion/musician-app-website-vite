@@ -22,7 +22,7 @@ const resources = {
         cta: "Start Your Project",
         learnMore: "View Our Work",
       },
-      // Services Section
+      // Services Section - English
       services: {
         title: "Our Services",
         subtitle:
@@ -56,6 +56,11 @@ const resources = {
           title: "Consulting & Strategy",
           description:
             "Expert guidance on technology strategy, digital transformation, and architecture planning.",
+        },
+        customSoftware: {
+          title: "Custom Software",
+          description:
+            "Tailored software solutions designed to meet your specific business requirements and workflows.",
         },
       },
       // Solutions Section
@@ -381,6 +386,11 @@ const resources = {
           description:
             "Stručno vođenje u tehnološkoj strategiji, digitalnoj transformaciji i planiranju arhitekture.",
         },
+        customSoftware: {
+          title: "Softver po meri",
+          description:
+            "Softverska rešenja po meri dizajnirana da zadovolje specifične poslovne zahteve i radne tokove.",
+        },
       },
       // Solutions Section
       solutions: {
@@ -483,6 +493,7 @@ const resources = {
             "Dashboard za finansijsku analitiku u realnom vremenu za upravljanje investicijama.",
         },
       },
+
       // Musician App Section
       musicianApp: {
         mobileAppLabel: "Mobilna Aplikacija",

@@ -1,6 +1,7 @@
 import { ArrowRight, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import HeroImage from "../assets/Logo Softivity - no text.png";
+import { AnimatedSection } from "./AnimatedSection";
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -23,14 +24,17 @@ export default function Hero() {
               <Sparkles className="w-4 h-4" />
               <span>{t("hero.badge", "Innovative Software Solutions")}</span>
             </div>
+            <AnimatedSection animationType="fadeLeft">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                {t("hero.title")}
+              </h1>
+            </AnimatedSection>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              {t("hero.title")}
-            </h1>
-
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
-              {t("hero.subtitle")}
-            </p>
+            <AnimatedSection animationType="fadeRight" delay={100}>
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                {t("hero.subtitle")}
+              </p>
+            </AnimatedSection>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <button

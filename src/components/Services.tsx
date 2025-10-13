@@ -20,9 +20,8 @@ export default function Services() {
     },
     {
       icon: Layers,
-      title: "Custom Software",
-      description:
-        "Tailored software solutions designed to meet your specific business requirements and workflows.",
+      title: t("services.customSoftware.title"),
+      description: t("services.customSoftware.description"),
       features: ["Enterprise Solutions"],
     },
     // {

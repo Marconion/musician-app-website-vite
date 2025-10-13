@@ -42,7 +42,11 @@ export const StoreBadges = () => {
         rel="noopener noreferrer">
         <img
           src={GoogleStoreBadge}
-          style={{ width: "150px", display: "block" }}
+          style={{
+            width: "150px",
+            display: "block",
+            filter: "invert(1)",
+          }}
           alt="Google Store Badge"
         />
       </a>
