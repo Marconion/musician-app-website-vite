@@ -177,12 +177,12 @@ const resources = {
           addCollaborators: {
             title: "Adding Collaborators",
             description:
-              "If you have many collaborators or band members, easily invite them to your collaboration group. The app works on the principle of closed groups, which means only members that you invited to your group of associates can access your events and information for those events.",
+              "If you have many collaborators or band members, instead of contacting them individually or sending messages, you can easily invite them to your collaborator group. The app works on a closed-group principle, which means that only members of your collaborator group can access the events they are invited to and have accepted, as well as the information related to those events.",
           },
           createEvents: {
             title: "Creating Events",
             description:
-              "Create and manage gigs easily. Enter all necessary information and positions you need for that event. Invite all collaborators for specific positions with one click. You can also define a calling hierarchy.",
+              "Create and manage gigs easily. Enter all the necessary information and the positions required for the event. Invite all collaborators for the needed positions with a single click. They only need to accept and show up to perform, while your only task is to confirm the event and relax until it happens. You can also define an invitation hierarchy.",
           },
           communication: {
             title: "Communication",
@@ -507,12 +507,12 @@ const resources = {
           addCollaborators: {
             title: "Dodavanje saradnika",
             description:
-              "Ako imate mnogo saradnika ili članova benda, lako ih pozovite u svoju grupu saradnika. Aplikacija funkcioniše po principu zatvorenih grupa, što znači da samo članovi, koji su članovi Vaše grupe saradnika, mogu da pristupe vašim događajima i informacijama vezanim za iste.",
+              "Ako imate mnogo saradnika ili članova benda, da ih ne bi zvali ponaosob ili slali poruke, lako ih pozovite u svoju grupu saradnika. Aplikacija funkcioniše po principu zatvorenih grupa, što znači da samo članovi, koji su članovi Vaše grupe saradnika, mogu da pristupe vašim događajima na koje su pozvani i koje su prihvatili i informacijama vezanim za iste.",
           },
           createEvents: {
             title: "Kreiranje događaja",
             description:
-              "Kreirajte i upravljajte svirkama jednostavno. Unesite sve neophodne informacije i pozicije koje su vam potrebne za taj događaj. Pozovite sve saradnike za određene pozicije jednim klikom. Takođe možete definisati hijerarhiju pozivanja.",
+              "Kreirajte i upravljajte svirkama jednostavno. Unesite sve neophodne informacije i pozicije koje su vam potrebne za taj događaj. Pozovite sve saradnike za potrebne pozicije jednim klikom. Na njima je samo da prihvate i dodju da sviraju, a na vama je samo da potvrdite dogadjaj i da se opustite do njega. Takođe možete definisati hijerarhiju pozivanja.",
           },
           communication: {
             title: "Komunikacija",
