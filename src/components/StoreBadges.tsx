@@ -12,7 +12,7 @@ export const StoreBadges = () => {
         paddingBottom: "2rem",
       }}>
       <a
-        href=""
+        href="https://apps.apple.com/rs/app/musicians-app/id6752311344"
         style={{
           display: "block",
           transform: "scale(1)",
