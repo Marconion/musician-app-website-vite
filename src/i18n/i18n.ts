@@ -632,7 +632,7 @@ const resources = {
           reason1: "Jer nam je stalo do vašeg uspeha",
           reason2: "Jer cenimo vaš doprinos",
           reason3: "Posvećena podrška i održavanje",
-          reason4: "Agile metodologija i transparentna komunikacija",
+          reason4: "Agilni pristup razvoju i transparentna komunikacija",
         },
         form: {
           name: "Vaše Ime *",
