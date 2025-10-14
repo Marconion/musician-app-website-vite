@@ -273,9 +273,9 @@ const resources = {
           database: "Database",
         },
         cta: {
-          title: "Ready to Start Your Musical Journey?",
+          title: "Ready to simplify your business life?",
           subtitle:
-            "Join thousands of musicians who are already using our app to create amazing music.",
+            "Join thousands of musicians already using our app to organize events and make planning easier.",
         },
         screenshots: {
           title: "App Screenshots",
@@ -604,9 +604,9 @@ const resources = {
           database: "Baza Podataka",
         },
         cta: {
-          title: "Spremni ste da počnete svoje muzičko putovanje?",
+          title: "Spremni ste da olakšate sebi posao?",
           subtitle:
-            "Pridružite se hiljadama muzičara koji već koriste našu aplikaciju za kreiranje neverovatne muzike.",
+            "Pridružite se hiljadama muzičara koji već koriste našu aplikaciju za organizaciju dogadjaja i olakšajte sebi planiranje.",
         },
         screenshots: {
           title: "Slike Aplikacije",
