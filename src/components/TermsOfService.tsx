@@ -241,6 +241,92 @@ export default function TermsOfService() {
                 </p>
               </section>
 
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  {t("musicianApp.termsOfService.privacyData.title")}
+                </h2>
+                <p className="mb-3">
+                  {t("musicianApp.termsOfService.privacyData.paragraph1")}
+                </p>
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 my-4">
+                  <p className="font-semibold text-gray-900 mb-2">
+                    👉{" "}
+                    <a
+                      href="https://softivity.net/politika-privatnosti"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-blue-700 underline">
+                      https://softivity.net/politika-privatnosti
+                    </a>
+                  </p>
+                </div>
+                <p>{t("musicianApp.termsOfService.privacyData.paragraph2")}</p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  {t("musicianApp.termsOfService.paidFeatures.title")}
+                </h2>
+                <p className="mb-3">
+                  {t("musicianApp.termsOfService.paidFeatures.paragraph1")}
+                </p>
+                <p className="mb-3">
+                  {t("musicianApp.termsOfService.paidFeatures.paragraph2")}
+                </p>
+                <p>{t("musicianApp.termsOfService.paidFeatures.paragraph3")}</p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  {t("musicianApp.termsOfService.liabilityLimit.title")}
+                </h2>
+                <p>
+                  {t("musicianApp.termsOfService.liabilityLimit.paragraph1")}
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  {t("musicianApp.termsOfService.termsChanges.title")}
+                </h2>
+                <p className="mb-3">
+                  {t("musicianApp.termsOfService.termsChanges.paragraph1")}
+                </p>
+                <p className="mb-3">
+                  {t("musicianApp.termsOfService.termsChanges.paragraph2")}
+                </p>
+                <p>{t("musicianApp.termsOfService.termsChanges.paragraph3")}</p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  {t("musicianApp.termsOfService.jurisdiction.title")}
+                </h2>
+                <p className="mb-3">
+                  {t("musicianApp.termsOfService.jurisdiction.paragraph1")}
+                </p>
+                <p>{t("musicianApp.termsOfService.jurisdiction.paragraph2")}</p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  {t("musicianApp.termsOfService.contact.title")}
+                </h2>
+                <p className="mb-4">
+                  {t("musicianApp.termsOfService.contact.description")}
+                </p>
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
+                  <p className="text-gray-900">
+                    📧 Email:{" "}
+                    <a
+                      href="mailto:support@softivity.net"
+                      className="text-blue-600 hover:text-blue-700 underline font-semibold">
+                      support@softivity.net
+                    </a>
+                  </p>
+                </div>
+              </section>
+
               <section className="bg-gray-50 border border-gray-200 rounded-lg p-6 mt-8">
                 <p className="text-center text-gray-700 font-medium">
                   {t("musicianApp.termsOfService.acceptance")}

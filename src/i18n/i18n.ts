@@ -311,6 +311,48 @@ const resources = {
             paragraph3:
               "We do not guarantee uninterrupted operation, absence of errors, or complete availability of the service.",
           },
+          privacyData: {
+            title: "6. Privacy and Data Protection",
+            paragraph1:
+              "By using the Application, you agree to the processing of your personal data in accordance with our Privacy Policy available at:",
+            paragraph2:
+              "Data entered by users is used exclusively for the purposes of the Application's functioning (account creation, communication, event organization).",
+          },
+          paidFeatures: {
+            title: "7. Paid Features (if available)",
+            paragraph1:
+              "Certain features of the Application may be available only through subscription or one-time payment.",
+            paragraph2:
+              "All prices and payment terms will be clearly displayed before making a purchase.",
+            paragraph3:
+              "Softivity does not provide automatic refunds unless required by law or otherwise stated in the payment terms.",
+          },
+          liabilityLimit: {
+            title: "8. Limitation of Liability",
+            paragraph1:
+              "Softivity, its employees, and associates are not liable for any direct, indirect, incidental, or consequential damages arising from the use of the Application, including but not limited to data loss, operational errors, or service interruptions.",
+          },
+          termsChanges: {
+            title: "9. Changes to Terms",
+            paragraph1:
+              "Softivity reserves the right to modify these Terms at any time.",
+            paragraph2:
+              "Users will be notified of any changes through the Application or by email.",
+            paragraph3:
+              "Continued use of the Application after the publication of changes is considered acceptance of the new Terms.",
+          },
+          jurisdiction: {
+            title: "10. Applicable Law and Jurisdiction",
+            paragraph1:
+              "These Terms are governed by the laws of the Republic of Serbia.",
+            paragraph2:
+              "For the resolution of any disputes, the court in Belgrade has jurisdiction.",
+          },
+          contact: {
+            title: "11. Contact",
+            description:
+              "For all questions, suggestions, or complaints, you can contact us at:",
+          },
           acceptance:
             "By using this application, you agree to these Terms of Service.",
         },
@@ -712,6 +754,47 @@ const resources = {
               "Aplikacija se koristi na sopstvenu odgovornost korisnika.",
             paragraph3:
               "Ne garantujemo neprekidan rad, odsustvo grešaka ili potpunu dostupnost servisa.",
+          },
+          privacyData: {
+            title: "6. Privatnost i zaštita podataka",
+            paragraph1:
+              "Korišćenjem Aplikacije saglasni ste sa obradom vaših ličnih podataka u skladu sa našom Politikom privatnosti dostupnom na adresi:",
+            paragraph2:
+              "Podaci koje korisnici unesu koriste se isključivo za potrebe funkcionisanja Aplikacije (kreiranje naloga, komunikacija, organizacija događaja).",
+          },
+          paidFeatures: {
+            title: "7. Plaćene funkcije (ako postoje)",
+            paragraph1:
+              "Određene funkcionalnosti Aplikacije mogu biti dostupne samo putem pretplate ili jednokratnog plaćanja.",
+            paragraph2:
+              "Sve cene i uslovi plaćanja biće jasno prikazani pre izvršenja kupovine.",
+            paragraph3:
+              "Softivity ne vrši automatske refundacije osim ako je to zakonom obavezno ili ako nije drugačije navedeno u uslovima plaćanja.",
+          },
+          liabilityLimit: {
+            title: "8. Ograničenje odgovornosti",
+            paragraph1:
+              "Softivity, njegovi zaposleni i saradnici ne snose odgovornost za bilo kakvu direktnu, indirektnu, slučajnu ili posledičnu štetu nastalu korišćenjem Aplikacije, uključujući ali ne ograničavajući se na gubitak podataka, greške u radu ili prekide servisa.",
+          },
+          termsChanges: {
+            title: "9. Izmene Uslova",
+            paragraph1:
+              "Softivity zadržava pravo da u bilo kom trenutku izmeni ove Uslove.",
+            paragraph2:
+              "O eventualnim izmenama korisnici će biti obavešteni putem Aplikacije ili e-pošte.",
+            paragraph3:
+              "Nastavak korišćenja Aplikacije nakon objave izmena smatra se prihvatanjem novih Uslova.",
+          },
+          jurisdiction: {
+            title: "10. Primena prava i nadležnost",
+            paragraph1: "Na ove Uslove primenjuje se pravo Republike Srbije.",
+            paragraph2:
+              "Za rešavanje eventualnih sporova nadležan je sud u Beogradu.",
+          },
+          contact: {
+            title: "11. Kontakt",
+            description:
+              "Za sva pitanja, predloge ili pritužbe možete nas kontaktirati na:",
           },
           acceptance:
             "Korišćenjem ove aplikacije, saglasni ste sa ovim Uslovima korišćenja.",
