@@ -256,7 +256,7 @@ const resources = {
           introduction: {
             title: "1. Introduction",
             paragraph1:
-              "These Terms of Service ('Terms') govern the use of the mobilea pplication Musician's App ('Application') managed by Softivity ('We', 'Our Company').",
+              "These Terms of Service ('Terms') regulate the use of the mobile and web application Musician's App ('Application') managed by Softivity ('We', 'Our Company').",
             paragraph2:
               "By using the Application, you confirm that you have read, understood, and accepted these Terms.",
             paragraph3:
@@ -265,72 +265,81 @@ const resources = {
           serviceDescription: {
             title: "2. Service Description",
             paragraph1:
-              "Musician's App is a platform designed to connect musicians, technicians, and event organizers.",
+              "Musician's App is a platform for connecting musicians, technicians, and event organizers.",
             paragraph2:
-              "Users can create events, invite collaborators for specific positions (e.g., drummer, guitarist, sound technician) and manage performance agreements.",
+              "Users can: create events and invite collaborators by positions (e.g., drummer, guitarist, sound technician), exchange messages via internal chat, arrange participation in events.",
             paragraph3:
-              "Softivity is not an intermediary in the contractual relationship between users and does not participate in the organization of the events themselves.",
+              "Softivity is not an intermediary in business agreements between users and does not participate in the organization of the events themselves.",
           },
           registration: {
             title: "3. Registration and User Accounts",
             paragraph1:
-              "Registration of a user account is required to use certain features of the Application.",
+              "Registration of a user account is required to use the Application.",
             paragraph2:
-              "The user is responsible for the accuracy of the data entered during registration and is obliged to keep their access data (username, password) confidential.",
+              "The user is obliged to enter accurate data and to keep their access credentials (username, password) confidential.",
             prohibited: "It is prohibited to:",
             prohibitedItem1: "Use someone else's account",
-            prohibitedItem2: "Create fake accounts",
-            prohibitedItem3: "Share access credentials with third parties",
+            prohibitedItem2: "Create fake identities",
+            prohibitedItem3: "Share access credentials with other persons",
             paragraph3:
-              "Softivity reserves the right to suspend or delete the account of a user who violates these Terms without prior notice.",
+              "Softivity reserves the right to delete or suspend accounts that violate these Terms.",
           },
-          userObligations: {
-            title: "4. User Obligations and Responsibilities",
+          internalChat: {
+            title: "4. Internal Chat",
             paragraph1:
-              "The user undertakes to use the Application exclusively for lawful purposes and in accordance with its intended use.",
-            prohibitedContent: "It is prohibited to publish content that:",
-            prohibitedItem1: "Is offensive, illegal, inaccurate, or misleading",
-            prohibitedItem2:
-              "Contains hate speech, discrimination, threats, or violation of the rights of others",
-            prohibitedItem3: "Promotes illegal activities",
+              "The Application enables users to exchange messages via internal chat for arranging events and collaboration.",
             paragraph2:
-              "The user is solely responsible for the content they publish and the communication they engage in through the Application.",
-          },
-          companyLiability: {
-            title: "5. Softivity Company Liability",
-            paragraph1:
-              "Softivity provides a technical platform but is not responsible for:",
-            notResponsible: "Not responsible for:",
-            notResponsibleItem1: "Agreements between users",
-            notResponsibleItem2: "Realization of agreed events",
-            notResponsibleItem3:
-              "Payments, delays, cancellations, or non-appearance of participants",
-            notResponsibleItem4:
-              "Damage resulting from the use or inability to use the Application",
-            paragraph2: "The Application is used at the user's own risk.",
+              "Users agree to use the chat exclusively for business and communication purposes related to the Application.",
+            prohibited: "It is prohibited to:",
+            prohibitedItem1:
+              "Send messages with offensive, vulgar, threatening, discriminatory, or illegal content",
+            prohibitedItem2: "Spam, harass, or insult other users",
+            prohibitedItem3:
+              "Share confidential information without consent (e.g., phone numbers, addresses, financial data)",
             paragraph3:
-              "We do not guarantee uninterrupted operation, absence of errors, or complete availability of the service.",
+              "Softivity does not actively monitor private communication but reserves the right to access message content exclusively in case of abuse reports, in compliance with privacy protection laws.",
+            paragraph4:
+              "Users who violate chat conduct rules may be temporarily or permanently suspended.",
+          },
+          userResponsibility: {
+            title: "5. User Responsibility",
+            paragraph1:
+              "Users are solely responsible for the content they publish or exchange through the Application.",
+            prohibitedContent: "It is prohibited to publish information that:",
+            prohibitedItem1:
+              "Is inaccurate, misleading, or constitutes false representation",
+            prohibitedItem2:
+              "Violates third-party rights (copyright, reputation, privacy)",
+            prohibitedItem3:
+              "Promotes violence, discrimination, or illegal activities",
+          },
+          disclaimer: {
+            title: "6. Disclaimer of Liability",
+            paragraph1:
+              "Softivity does not guarantee the accuracy of information exchanged by users nor participates in their business agreements.",
+            notResponsible: "Softivity is not responsible for:",
+            notResponsibleItem1: "Content of chat messages",
+            notResponsibleItem2:
+              "Failed agreements, non-appearance at events, financial disputes",
+            notResponsibleItem3:
+              "Any damage resulting from the use or inability to use the Application",
+            paragraph2: "The Application is used at the user's own risk.",
           },
           privacyData: {
-            title: "6. Privacy and Data Protection",
+            title: "7. Privacy and Data Protection",
             paragraph1:
               "By using the Application, you agree to the processing of your personal data in accordance with our Privacy Policy available at:",
             paragraph2:
-              "Data entered by users is used exclusively for the purposes of the Application's functioning (account creation, communication, event organization).",
+              "Softivity will not sell, rent, or otherwise transfer your data to third parties, unless legally required or necessary for service functionality.",
           },
           paidFeatures: {
-            title: "7. Paid Features (if available)",
+            title: "8. Paid Features",
             paragraph1:
-              "Certain features of the Application may be available only through subscription or one-time payment.",
+              "Certain features may be available through subscription or one-time purchase.",
             paragraph2:
-              "All prices and payment terms will be clearly displayed before making a purchase.",
+              "All prices and payment terms will be clearly stated before making a purchase.",
             paragraph3:
-              "Softivity does not provide automatic refunds unless required by law or otherwise stated in the payment terms.",
-          },
-          liabilityLimit: {
-            title: "8. Limitation of Liability",
-            paragraph1:
-              "Softivity, its employees, and associates are not liable for any direct, indirect, incidental, or consequential damages arising from the use of the Application, including but not limited to data loss, operational errors, or service interruptions.",
+              "Refunds are not provided unless legally required or otherwise defined in payment terms.",
           },
           termsChanges: {
             title: "9. Changes to Terms",
@@ -351,7 +360,7 @@ const resources = {
           contact: {
             title: "11. Contact",
             description:
-              "For all questions, suggestions, or complaints, you can contact us at:",
+              "For all questions, abuse reports, or suggestions, you can contact us at:",
           },
           acceptance:
             "By using this application, you agree to these Terms of Service.",
@@ -708,73 +717,83 @@ const resources = {
           serviceDescription: {
             title: "2. Opis usluge",
             paragraph1:
-              "Musician's App je platforma namenjena povezivanju muzičara, tehničara i organizatora događaja.",
+              "Musician's App je platforma za povezivanje muzičara, tehničara i organizatora događaja.",
             paragraph2:
-              "Korisnici mogu kreirati događaje, pozivati saradnike za određene pozicije (npr. bubnjar, gitarista, tonac) i upravljati dogovorima o nastupima.",
+              "Korisnici mogu: kreirati događaje i pozivati saradnike po pozicijama (npr. bubnjar, gitarista, tonac), razmenjivati poruke putem internog četa, dogovarati učešće na događajima.",
             paragraph3:
-              "Softivity nije posrednik u ugovornom odnosu između korisnika i ne učestvuje u organizaciji samih događaja.",
+              "Softivity nije posrednik u poslovnim dogovorima između korisnika i ne učestvuje u organizaciji samih događaja.",
           },
           registration: {
             title: "3. Registracija i korisnički nalozi",
             paragraph1:
-              "Za korišćenje određenih funkcionalnosti Aplikacije neophodna je registracija korisničkog naloga.",
+              "Za korišćenje aplikacije potrebna je registracija korisničkog naloga.",
             paragraph2:
-              "Korisnik je odgovoran za tačnost podataka unetih prilikom registracije i dužan je da čuva poverljivost svojih pristupnih podataka (korisničko ime, lozinka).",
+              "Korisnik je dužan da unosi tačne podatke i da čuva poverljivost svojih pristupnih podataka (korisničko ime, lozinka).",
             prohibited: "Zabranjeno je:",
             prohibitedItem1: "Korišćenje tuđeg naloga",
-            prohibitedItem2: "Kreiranje lažnih naloga",
-            prohibitedItem3: "Deljenje pristupnih podataka sa trećim licima",
+            prohibitedItem2: "Kreiranje lažnih identiteta",
+            prohibitedItem3: "Deljenje pristupnih podataka sa drugim osobama",
             paragraph3:
-              "Softivity zadržava pravo da, bez prethodne najave, suspenduje ili obriše nalog korisnika koji krši ove Uslove.",
+              "Softivity zadržava pravo da obriše ili suspenduje nalog koji krši ove Uslove.",
           },
-          userObligations: {
-            title: "4. Obaveze i odgovornost korisnika",
+          internalChat: {
+            title: "4. Interni chat",
             paragraph1:
-              "Korisnik se obavezuje da Aplikaciju koristi isključivo u zakonite svrhe i u skladu sa njenom namenom.",
-            prohibitedContent: "Zabranjeno je objavljivanje sadržaja koji:",
-            prohibitedItem1: "Je uvredljiv, nezakonit, netačan ili obmanjujući",
-            prohibitedItem2:
-              "Sadrži govor mržnje, diskriminaciju, pretnje ili povredu prava drugih lica",
-            prohibitedItem3: "Promoviše nelegalne aktivnosti",
+              "Aplikacija omogućava korisnicima razmenu poruka putem internog četa radi dogovora oko događaja i saradnje.",
             paragraph2:
-              "Korisnik je isključivo odgovoran za sadržaj koji objavljuje i komunikaciju koju ostvaruje putem Aplikacije.",
+              "Korisnik se obavezuje da će chat koristiti isključivo u poslovne i komunikacione svrhe vezane za Aplikaciju.",
+            prohibited: "Zabranjeno je:",
+            prohibitedItem1:
+              "Slanje poruka uvredljivog, vulgarnog, pretećeg, diskriminatornog ili nezakonitog sadržaja",
+            prohibitedItem2:
+              "Spamovanje, uznemiravanje ili vređanje drugih korisnika",
+            prohibitedItem3:
+              "Deljenje poverljivih podataka bez saglasnosti druge strane (npr. brojevi telefona, adrese, finansijski podaci)",
+            paragraph3:
+              "Softivity ne prati aktivno privatnu komunikaciju korisnika, ali zadržava pravo da pristupi sadržaju poruka isključivo u slučaju prijave zloupotrebe, uz poštovanje zakona o zaštiti privatnosti.",
+            paragraph4:
+              "Korisnici koji krše pravila ponašanja u chatu mogu biti privremeno ili trajno suspendovani.",
           },
-          companyLiability: {
-            title: "5. Odgovornost kompanije Softivity",
+          userResponsibility: {
+            title: "5. Odgovornost korisnika",
             paragraph1:
-              "Softivity obezbeđuje tehničku platformu, ali nije odgovoran za:",
-            notResponsible: "Nije odgovoran za:",
-            notResponsibleItem1: "Dogovore između korisnika",
-            notResponsibleItem2: "Realizaciju dogovorenih događaja",
+              "Korisnik je isključivo odgovoran za sadržaj koji objavljuje ili razmenjuje putem Aplikacije.",
+            prohibitedContent: "Zabranjeno je objavljivanje informacija koje:",
+            prohibitedItem1:
+              "Su netačne, obmanjujuće ili predstavljaju lažno predstavljanje",
+            prohibitedItem2:
+              "Povređuju prava trećih lica (autorska, ugled, privatnost)",
+            prohibitedItem3:
+              "Promovišu nasilje, diskriminaciju ili nezakonite aktivnosti",
+          },
+          disclaimer: {
+            title: "6. Odricanje od odgovornosti",
+            paragraph1:
+              "Softivity ne garantuje tačnost informacija koje korisnici razmenjuju niti učestvuje u njihovim poslovnim dogovorima.",
+            notResponsible: "Softivity ne snosi odgovornost za:",
+            notResponsibleItem1: "Sadržaj poruka u chatu",
+            notResponsibleItem2:
+              "Neuspešne dogovore, nepojavljivanje na događajima, finansijske sporove",
             notResponsibleItem3:
-              "Isplate, kašnjenja, otkazivanja ili nepojavljivanje učesnika",
-            notResponsibleItem4:
-              "Štetu nastalu zbog upotrebe ili nemogućnosti upotrebe Aplikacije",
+              "Bilo kakvu štetu nastalu usled korišćenja ili nemogućnosti korišćenja Aplikacije",
             paragraph2:
               "Aplikacija se koristi na sopstvenu odgovornost korisnika.",
-            paragraph3:
-              "Ne garantujemo neprekidan rad, odsustvo grešaka ili potpunu dostupnost servisa.",
           },
           privacyData: {
-            title: "6. Privatnost i zaštita podataka",
+            title: "7. Privatnost i zaštita podataka",
             paragraph1:
-              "Korišćenjem Aplikacije saglasni ste sa obradom vaših ličnih podataka u skladu sa našom Politikom privatnosti dostupnom na adresi:",
+              "Upotrebom Aplikacije saglasni ste sa obradom vaših ličnih podataka u skladu sa našom Politikom privatnosti, dostupnom na adresi:",
             paragraph2:
-              "Podaci koje korisnici unesu koriste se isključivo za potrebe funkcionisanja Aplikacije (kreiranje naloga, komunikacija, organizacija događaja).",
+              "Softivity neće prodavati, iznajmljivati ili na drugi način ustupati vaše podatke trećim licima, osim ako to nije zakonom obavezno ili neophodno za funkcionisanje servisa.",
           },
           paidFeatures: {
-            title: "7. Plaćene funkcije (ako postoje)",
+            title: "8. Plaćene funkcionalnosti",
             paragraph1:
-              "Određene funkcionalnosti Aplikacije mogu biti dostupne samo putem pretplate ili jednokratnog plaćanja.",
+              "Određene funkcionalnosti mogu biti dostupne putem pretplate ili jednokratne kupovine.",
             paragraph2:
-              "Sve cene i uslovi plaćanja biće jasno prikazani pre izvršenja kupovine.",
+              "Sve cene i uslovi plaćanja biće jasno navedeni pre izvršenja kupovine.",
             paragraph3:
-              "Softivity ne vrši automatske refundacije osim ako je to zakonom obavezno ili ako nije drugačije navedeno u uslovima plaćanja.",
-          },
-          liabilityLimit: {
-            title: "8. Ograničenje odgovornosti",
-            paragraph1:
-              "Softivity, njegovi zaposleni i saradnici ne snose odgovornost za bilo kakvu direktnu, indirektnu, slučajnu ili posledičnu štetu nastalu korišćenjem Aplikacije, uključujući ali ne ograničavajući se na gubitak podataka, greške u radu ili prekide servisa.",
+              "Povraćaj sredstava se ne vrši osim ako je to zakonom predviđeno ili ako nije drugačije definisano u uslovima plaćanja.",
           },
           termsChanges: {
             title: "9. Izmene Uslova",
@@ -794,7 +813,7 @@ const resources = {
           contact: {
             title: "11. Kontakt",
             description:
-              "Za sva pitanja, predloge ili pritužbe možete nas kontaktirati na:",
+              "Za sva pitanja, prijave zloupotrebe ili predloge možete nas kontaktirati na:",
           },
           acceptance:
             "Korišćenjem ove aplikacije, saglasni ste sa ovim Uslovima korišćenja.",

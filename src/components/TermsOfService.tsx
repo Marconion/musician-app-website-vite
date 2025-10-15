@@ -159,86 +159,112 @@ export default function TermsOfService() {
 
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  {t("musicianApp.termsOfService.userObligations.title")}
+                  {t("musicianApp.termsOfService.internalChat.title")}
                 </h2>
                 <p className="mb-3">
-                  {t("musicianApp.termsOfService.userObligations.paragraph1")}
+                  {t("musicianApp.termsOfService.internalChat.paragraph1")}
+                </p>
+                <p className="mb-3">
+                  {t("musicianApp.termsOfService.internalChat.paragraph2")}
+                </p>
+
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4 my-4">
+                  <p className="font-semibold text-gray-900 mb-2">
+                    {t("musicianApp.termsOfService.internalChat.prohibited")}
+                  </p>
+                  <ul className="list-disc list-inside space-y-1 text-gray-700">
+                    <li>
+                      {t(
+                        "musicianApp.termsOfService.internalChat.prohibitedItem1"
+                      )}
+                    </li>
+                    <li>
+                      {t(
+                        "musicianApp.termsOfService.internalChat.prohibitedItem2"
+                      )}
+                    </li>
+                    <li>
+                      {t(
+                        "musicianApp.termsOfService.internalChat.prohibitedItem3"
+                      )}
+                    </li>
+                  </ul>
+                </div>
+
+                <p className="mb-3">
+                  {t("musicianApp.termsOfService.internalChat.paragraph3")}
+                </p>
+                <p>{t("musicianApp.termsOfService.internalChat.paragraph4")}</p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+                  {t("musicianApp.termsOfService.userResponsibility.title")}
+                </h2>
+                <p className="mb-3">
+                  {t(
+                    "musicianApp.termsOfService.userResponsibility.paragraph1"
+                  )}
                 </p>
 
                 <div className="bg-red-50 border border-red-200 rounded-lg p-4 my-4">
                   <p className="font-semibold text-gray-900 mb-2">
                     {t(
-                      "musicianApp.termsOfService.userObligations.prohibitedContent"
+                      "musicianApp.termsOfService.userResponsibility.prohibitedContent"
                     )}
                   </p>
                   <ul className="list-disc list-inside space-y-1 text-gray-700">
                     <li>
                       {t(
-                        "musicianApp.termsOfService.userObligations.prohibitedItem1"
+                        "musicianApp.termsOfService.userResponsibility.prohibitedItem1"
                       )}
                     </li>
                     <li>
                       {t(
-                        "musicianApp.termsOfService.userObligations.prohibitedItem2"
+                        "musicianApp.termsOfService.userResponsibility.prohibitedItem2"
                       )}
                     </li>
                     <li>
                       {t(
-                        "musicianApp.termsOfService.userObligations.prohibitedItem3"
+                        "musicianApp.termsOfService.userResponsibility.prohibitedItem3"
                       )}
                     </li>
                   </ul>
                 </div>
-
-                <p>
-                  {t("musicianApp.termsOfService.userObligations.paragraph2")}
-                </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  {t("musicianApp.termsOfService.companyLiability.title")}
+                  {t("musicianApp.termsOfService.disclaimer.title")}
                 </h2>
                 <p className="mb-3">
-                  {t("musicianApp.termsOfService.companyLiability.paragraph1")}
+                  {t("musicianApp.termsOfService.disclaimer.paragraph1")}
                 </p>
 
                 <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 my-4">
                   <p className="font-semibold text-gray-900 mb-2">
-                    {t(
-                      "musicianApp.termsOfService.companyLiability.notResponsible"
-                    )}
+                    {t("musicianApp.termsOfService.disclaimer.notResponsible")}
                   </p>
                   <ul className="list-disc list-inside space-y-1 text-gray-700">
                     <li>
                       {t(
-                        "musicianApp.termsOfService.companyLiability.notResponsibleItem1"
+                        "musicianApp.termsOfService.disclaimer.notResponsibleItem1"
                       )}
                     </li>
                     <li>
                       {t(
-                        "musicianApp.termsOfService.companyLiability.notResponsibleItem2"
+                        "musicianApp.termsOfService.disclaimer.notResponsibleItem2"
                       )}
                     </li>
                     <li>
                       {t(
-                        "musicianApp.termsOfService.companyLiability.notResponsibleItem3"
-                      )}
-                    </li>
-                    <li>
-                      {t(
-                        "musicianApp.termsOfService.companyLiability.notResponsibleItem4"
+                        "musicianApp.termsOfService.disclaimer.notResponsibleItem3"
                       )}
                     </li>
                   </ul>
                 </div>
 
-                <p className="mb-3">
-                  {t("musicianApp.termsOfService.companyLiability.paragraph2")}
-                </p>
-                <p>
-                  {t("musicianApp.termsOfService.companyLiability.paragraph3")}
-                </p>
+                <p>{t("musicianApp.termsOfService.disclaimer.paragraph2")}</p>
               </section>
 
               <section>
@@ -252,11 +278,11 @@ export default function TermsOfService() {
                   <p className="font-semibold text-gray-900 mb-2">
                     👉{" "}
                     <a
-                      href="https://softivity.net/politika-privatnosti"
+                      href="https://softivity.net/privacy"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-blue-600 hover:text-blue-700 underline">
-                      https://softivity.net/politika-privatnosti
+                      https://softivity.net/privacy
                     </a>
                   </p>
                 </div>
@@ -274,15 +300,6 @@ export default function TermsOfService() {
                   {t("musicianApp.termsOfService.paidFeatures.paragraph2")}
                 </p>
                 <p>{t("musicianApp.termsOfService.paidFeatures.paragraph3")}</p>
-              </section>
-
-              <section>
-                <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-                  {t("musicianApp.termsOfService.liabilityLimit.title")}
-                </h2>
-                <p>
-                  {t("musicianApp.termsOfService.liabilityLimit.paragraph1")}
-                </p>
               </section>
 
               <section>
