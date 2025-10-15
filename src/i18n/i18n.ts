@@ -244,7 +244,78 @@ const resources = {
           consent:
             "By using this application, you agree to this privacy policy.",
         },
+        termsOfService: {
+          title: "Terms of Service - Musician's App",
+          updated: "Last Updated: October 15, 2025",
+          backToApp: "Back to Musician's App",
+          owner: {
+            title: "Owner and Publisher:",
+            company: "Softivity - Entrepreneurial Shop",
+            location: "Belgrade, Republic of Serbia",
+          },
+          introduction: {
+            title: "1. Introduction",
+            paragraph1:
+              "These Terms of Service ('Terms') govern the use of the mobilea pplication Musician's App ('Application') managed by Softivity ('We', 'Our Company').",
+            paragraph2:
+              "By using the Application, you confirm that you have read, understood, and accepted these Terms.",
+            paragraph3:
+              "If you do not agree with any part of the Terms, please do not use the Application.",
+          },
+          serviceDescription: {
+            title: "2. Service Description",
+            paragraph1:
+              "Musician's App is a platform designed to connect musicians, technicians, and event organizers.",
+            paragraph2:
+              "Users can create events, invite collaborators for specific positions (e.g., drummer, guitarist, sound technician) and manage performance agreements.",
+            paragraph3:
+              "Softivity is not an intermediary in the contractual relationship between users and does not participate in the organization of the events themselves.",
+          },
+          registration: {
+            title: "3. Registration and User Accounts",
+            paragraph1:
+              "Registration of a user account is required to use certain features of the Application.",
+            paragraph2:
+              "The user is responsible for the accuracy of the data entered during registration and is obliged to keep their access data (username, password) confidential.",
+            prohibited: "It is prohibited to:",
+            prohibitedItem1: "Use someone else's account",
+            prohibitedItem2: "Create fake accounts",
+            prohibitedItem3: "Share access credentials with third parties",
+            paragraph3:
+              "Softivity reserves the right to suspend or delete the account of a user who violates these Terms without prior notice.",
+          },
+          userObligations: {
+            title: "4. User Obligations and Responsibilities",
+            paragraph1:
+              "The user undertakes to use the Application exclusively for lawful purposes and in accordance with its intended use.",
+            prohibitedContent: "It is prohibited to publish content that:",
+            prohibitedItem1: "Is offensive, illegal, inaccurate, or misleading",
+            prohibitedItem2:
+              "Contains hate speech, discrimination, threats, or violation of the rights of others",
+            prohibitedItem3: "Promotes illegal activities",
+            paragraph2:
+              "The user is solely responsible for the content they publish and the communication they engage in through the Application.",
+          },
+          companyLiability: {
+            title: "5. Softivity Company Liability",
+            paragraph1:
+              "Softivity provides a technical platform but is not responsible for:",
+            notResponsible: "Not responsible for:",
+            notResponsibleItem1: "Agreements between users",
+            notResponsibleItem2: "Realization of agreed events",
+            notResponsibleItem3:
+              "Payments, delays, cancellations, or non-appearance of participants",
+            notResponsibleItem4:
+              "Damage resulting from the use or inability to use the Application",
+            paragraph2: "The Application is used at the user's own risk.",
+            paragraph3:
+              "We do not guarantee uninterrupted operation, absence of errors, or complete availability of the service.",
+          },
+          acceptance:
+            "By using this application, you agree to these Terms of Service.",
+        },
         privacyPolicyLink: "Privacy Policy",
+        termsOfServiceLink: "Terms of Service",
         accountDeletion: {
           title: "Account Deletion",
           subtitle:
@@ -574,7 +645,79 @@ const resources = {
           consent:
             "Korišćenjem ove aplikacije, saglasni ste sa ovom politikom privatnosti.",
         },
+        termsOfService: {
+          title: "Uslovi korišćenja - Musician's App",
+          updated: "Datum poslednjeg ažuriranja: 15. oktobar 2025.",
+          backToApp: "Nazad na Musician's App",
+          owner: {
+            title: "Vlasnik i izdavač aplikacije:",
+            company: "Softivity - preduzetnička radnja",
+            location: "Beograd, Republika Srbija",
+          },
+          introduction: {
+            title: "1. Uvod",
+            paragraph1:
+              "Ovi Uslovi korišćenja ('Uslovi') uređuju upotrebu mobilne aplikacije Musician's App ('Aplikacija') kojom upravlja Softivity ('Mi', 'Naša kompanija').",
+            paragraph2:
+              "Korišćenjem Aplikacije potvrđujete da ste pročitali, razumeli i prihvatili ove Uslove.",
+            paragraph3:
+              "Ako se ne slažete sa bilo kojim delom Uslova, molimo vas da ne koristite Aplikaciju.",
+          },
+          serviceDescription: {
+            title: "2. Opis usluge",
+            paragraph1:
+              "Musician's App je platforma namenjena povezivanju muzičara, tehničara i organizatora događaja.",
+            paragraph2:
+              "Korisnici mogu kreirati događaje, pozivati saradnike za određene pozicije (npr. bubnjar, gitarista, tonac) i upravljati dogovorima o nastupima.",
+            paragraph3:
+              "Softivity nije posrednik u ugovornom odnosu između korisnika i ne učestvuje u organizaciji samih događaja.",
+          },
+          registration: {
+            title: "3. Registracija i korisnički nalozi",
+            paragraph1:
+              "Za korišćenje određenih funkcionalnosti Aplikacije neophodna je registracija korisničkog naloga.",
+            paragraph2:
+              "Korisnik je odgovoran za tačnost podataka unetih prilikom registracije i dužan je da čuva poverljivost svojih pristupnih podataka (korisničko ime, lozinka).",
+            prohibited: "Zabranjeno je:",
+            prohibitedItem1: "Korišćenje tuđeg naloga",
+            prohibitedItem2: "Kreiranje lažnih naloga",
+            prohibitedItem3: "Deljenje pristupnih podataka sa trećim licima",
+            paragraph3:
+              "Softivity zadržava pravo da, bez prethodne najave, suspenduje ili obriše nalog korisnika koji krši ove Uslove.",
+          },
+          userObligations: {
+            title: "4. Obaveze i odgovornost korisnika",
+            paragraph1:
+              "Korisnik se obavezuje da Aplikaciju koristi isključivo u zakonite svrhe i u skladu sa njenom namenom.",
+            prohibitedContent: "Zabranjeno je objavljivanje sadržaja koji:",
+            prohibitedItem1: "Je uvredljiv, nezakonit, netačan ili obmanjujući",
+            prohibitedItem2:
+              "Sadrži govor mržnje, diskriminaciju, pretnje ili povredu prava drugih lica",
+            prohibitedItem3: "Promoviše nelegalne aktivnosti",
+            paragraph2:
+              "Korisnik je isključivo odgovoran za sadržaj koji objavljuje i komunikaciju koju ostvaruje putem Aplikacije.",
+          },
+          companyLiability: {
+            title: "5. Odgovornost kompanije Softivity",
+            paragraph1:
+              "Softivity obezbeđuje tehničku platformu, ali nije odgovoran za:",
+            notResponsible: "Nije odgovoran za:",
+            notResponsibleItem1: "Dogovore između korisnika",
+            notResponsibleItem2: "Realizaciju dogovorenih događaja",
+            notResponsibleItem3:
+              "Isplate, kašnjenja, otkazivanja ili nepojavljivanje učesnika",
+            notResponsibleItem4:
+              "Štetu nastalu zbog upotrebe ili nemogućnosti upotrebe Aplikacije",
+            paragraph2:
+              "Aplikacija se koristi na sopstvenu odgovornost korisnika.",
+            paragraph3:
+              "Ne garantujemo neprekidan rad, odsustvo grešaka ili potpunu dostupnost servisa.",
+          },
+          acceptance:
+            "Korišćenjem ove aplikacije, saglasni ste sa ovim Uslovima korišćenja.",
+        },
         privacyPolicyLink: "Politika privatnosti",
+        termsOfServiceLink: "Uslovi korišćenja",
         accountDeletion: {
           title: "Brisanje naloga",
           subtitle:

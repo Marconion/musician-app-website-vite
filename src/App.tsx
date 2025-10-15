@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import HomePage from "./components/HomePage";
 import MusicianAppPage from "./components/MusicianAppPage";
 import PrivacyPolicy from "./components/PrivacyPolicy";
+import TermsOfService from "./components/TermsOfService";
 import AccountDeletion from "./components/AccountDeletion";
 import Footer from "./components/Footer";
 
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/musician-app" element={<MusicianAppPage />} />
           <Route path="/politika-privatnosti" element={<PrivacyPolicy />} />
+          <Route path="/uslovi-koriscenja" element={<TermsOfService />} />
           <Route path="/account-deletion" element={<AccountDeletion />} />
         </Routes>
         <Footer />

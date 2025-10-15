@@ -316,6 +316,11 @@ export default function MusicianAppPage() {
               {t("musicianApp.privacyPolicyLink")}
             </Link>
             <Link
+              to="/uslovi-koriscenja"
+              className="block text-blue-100 hover:text-white underline transition-colors">
+              {t("musicianApp.termsOfServiceLink")}
+            </Link>
+            <Link
               to="/account-deletion"
               className="block text-blue-100 hover:text-white underline transition-colors">
               {t("musicianApp.accountDeletionLink")}
