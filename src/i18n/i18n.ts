@@ -397,7 +397,7 @@ const resources = {
         cta: {
           title: "Ready to simplify your business life?",
           subtitle:
-            "Join thousands of musicians already using our app to organize events and make planning easier.",
+            "Join other musicians already using our app to organize events and make planning easier.",
         },
         screenshots: {
           title: "App Screenshots",
@@ -857,7 +857,7 @@ const resources = {
         cta: {
           title: "Spremni ste da olakšate sebi posao?",
           subtitle:
-            "Pridružite se hiljadama muzičara koji već koriste našu aplikaciju za organizaciju dogadjaja i olakšajte sebi planiranje.",
+            "Pridružite se ostalim muzičara koji već koriste našu aplikaciju za organizaciju dogadjaja i olakšajte sebi planiranje.",
         },
         screenshots: {
           title: "Slike Aplikacije",
