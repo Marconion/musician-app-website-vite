@@ -58,21 +58,21 @@ export default function Footer() {
                 <a
                   href="#services"
                   className="hover:text-blue-500 transition-colors">
-                  Mobile Development
+                  {t("footer.mobileDevelopment", "Mobile Development")}
                 </a>
               </li>
               <li>
                 <a
                   href="#services"
                   className="hover:text-blue-500 transition-colors">
-                  Web Development
+                  {t("footer.webDevelopment", "Web Development")}
                 </a>
               </li>
               <li>
                 <a
                   href="#services"
                   className="hover:text-blue-500 transition-colors">
-                  Custom Software
+                  {t("footer.customSoftware", "Custom Software")}
                 </a>
               </li>
               {/* <li>
@@ -101,33 +101,23 @@ export default function Footer() {
                 <a
                   href="#portfolio"
                   className="hover:text-blue-500 transition-colors">
-                  Portfolio
+                  {t("footer.portfolio", "Portfolio")}
                 </a>
               </li>
               <li>
                 <a
                   href="#process"
                   className="hover:text-blue-500 transition-colors">
-                  Our Process
+                  {t("footer.ourProcess", "Our Process")}
                 </a>
               </li>
               <li>
                 <a
                   href="#contact"
                   className="hover:text-blue-500 transition-colors">
-                  Contact Us
+                  {t("footer.contactUs", "Contact Us")}
                 </a>
               </li>
-              {/* <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Blog
-                </a>
-              </li> */}
             </ul>
           </div>
         </div>

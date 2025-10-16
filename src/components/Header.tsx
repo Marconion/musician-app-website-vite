@@ -1,4 +1,4 @@
-import { Menu, X, Code2, Globe } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -75,11 +75,11 @@ export default function Header() {
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
               {t("nav.solutions")}
             </button> */}
-            {/* <button
+            <button
               onClick={() => scrollToSection("process")}
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
-              Process
-            </button> */}
+              {t("nav.process")}
+            </button>
             <button
               onClick={() => scrollToSection("portfolio")}
               className="text-gray-700 hover:text-blue-600 transition-colors font-medium">

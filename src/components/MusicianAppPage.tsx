@@ -97,8 +97,11 @@ export default function MusicianAppPage() {
       </div>
 
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Original version: <section className="py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200"> */}
+      <section className="py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200 relative overflow-hidden">
+        {/* Animated background gradient with orange accent */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-300/30 via-purple-200/20 to-orange-musician/30 animate-gradient-shift"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="text-sm font-medium text-blue-600 mb-4">

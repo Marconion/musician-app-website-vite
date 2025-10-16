@@ -177,12 +177,12 @@ const resources = {
           addCollaborators: {
             title: "Adding Collaborators",
             description:
-              "If you have many collaborators or band members, instead of contacting them individually or sending messages, you can easily invite them to your collaborator group. The app works on a closed-group principle, which means that only members of your collaborator group can access the events they are invited to and have accepted, as well as the information related to those events.",
+              "If you have many collaborators or band members, instead of contacting them individually or sending messages for each gig you have, you can easily invite them to your collaborator group. The app works on a closed-group principle, which means that only members of your collaborator group can access the events they are invited to and have accepted, as well as the information related to those events.",
           },
           createEvents: {
             title: "Creating Events",
             description:
-              "Create and manage gigs easily. Enter all the necessary information and the positions required for the event. Invite all collaborators for the needed positions with a single click. They only need to accept and show up to perform, while your only task is to confirm the event and relax until it happens. You can also define an invitation hierarchy.",
+              "Create and manage gigs easily. Enter all the necessary information and the positions required for the event. Invite all collaborators for the needed positions with a single click. They only need to accept and show up to perform, while your only task is to confirm the event and relax until it happens. You can also define an invitation hierarchy, arrange collaborators by priority, and invitations will be sent in order to the first, and if he/she can't make it, then to the next one, and so on.",
           },
           communication: {
             title: "Communication",
@@ -451,6 +451,12 @@ const resources = {
         services: "Services",
         connect: "Connect With Us",
         rights: "All rights reserved.",
+        portfolio: "Portfolio",
+        ourProcess: "Our Process",
+        contactUs: "Contact Us",
+        mobileDevelopment: "Mobile Development",
+        webDevelopment: "Web Development",
+        customSoftware: "Custom Software",
       },
     },
   },
@@ -629,12 +635,12 @@ const resources = {
           addCollaborators: {
             title: "Dodavanje saradnika",
             description:
-              "Ako imate mnogo saradnika ili članova benda, da ih ne bi zvali ponaosob ili slali poruke, lako ih pozovite u svoju grupu saradnika. Aplikacija funkcioniše po principu zatvorenih grupa, što znači da samo članovi, koji su članovi Vaše grupe saradnika, mogu da pristupe vašim događajima na koje su pozvani i koje su prihvatili i informacijama vezanim za iste.",
+              "Ako imate mnogo saradnika ili članova benda, da ih ne bi zvali ponaosob ili slali poruke za svaku svirku koju imate, lako ih pozovite u svoju grupu saradnika. Aplikacija funkcioniše po principu zatvorenih grupa, što znači da samo članovi, koji su članovi Vaše grupe saradnika, mogu da pristupe vašim događajima na koje su pozvani i koje su prihvatili i informacijama vezanim za iste.",
           },
           createEvents: {
             title: "Kreiranje događaja",
             description:
-              "Kreirajte i upravljajte svirkama jednostavno. Unesite sve neophodne informacije i pozicije koje su vam potrebne za taj događaj. Pozovite sve saradnike za potrebne pozicije jednim klikom. Na njima je samo da prihvate i dodju da sviraju, a na vama je samo da potvrdite dogadjaj i da se opustite do njega. Takođe možete definisati hijerarhiju pozivanja.",
+              "Kreirajte i upravljajte svirkama jednostavno. Unesite sve neophodne informacije i pozicije koje su vam potrebne za taj događaj. Pozovite sve saradnike za potrebne pozicije jednim klikom. Na njima je samo da prihvate i dodju da sviraju, a na vama je samo da potvrdite dogadjaj i da se opustite do njega. Takođe možete definisati hijerarhiju pozivanja, poredjajte saradnike po prioritetu i pozive će dobijati redom prvi, pa ako on ne može, prvi sledeći itd.",
           },
           communication: {
             title: "Komunikacija",
@@ -905,6 +911,12 @@ const resources = {
         services: "Usluge",
         connect: "Povežite se sa Nama",
         rights: "Sva prava zadržana.",
+        portfolio: "Portfolio",
+        ourProcess: "Naš Proces",
+        contactUs: "Kontaktirajte Nas",
+        mobileDevelopment: "Razvoj Mobilnih Aplikacija",
+        webDevelopment: "Web Razvoj",
+        customSoftware: "Prilagođeni Softver",
       },
     },
   },
