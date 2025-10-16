@@ -182,17 +182,17 @@ const resources = {
           createEvents: {
             title: "Creating Events",
             description:
-              "Create and manage gigs easily. Enter all the necessary information and the positions required for the event. Invite all collaborators for the needed positions with a single click. They only need to accept and show up to perform, while your only task is to confirm the event and relax until it happens. You can also define an invitation hierarchy, arrange collaborators by priority, and invitations will be sent in order to the first, and if he/she can't make it, then to the next one, and so on.",
+              "Create and manage gigs easily. Enter all the necessary information and the positions required for the event. Invite all collaborators for the needed positions with a single click. They only need to accept and show up to perform cause all the information is available when they click on the event, while your only task is to confirm the event and relax until it happens. You can also define an invitation hierarchy, arrange collaborators by priority, and invitations will be sent in order to the first, and if he/she can't make it, then to the next one, and so on.",
           },
           communication: {
             title: "Communication",
             description:
-              "Seamless communication through  chat and notifications that keep you informed at all times. No more searching for messages in various apps (WhatsApp, Viber, Messenger, SMS, etc.). All work-related information is in one place.",
+              "Seamless communication through  chat and notifications that keep you informed at all times. No more searching for messages in various apps (WhatsApp, Viber, Messenger, SMS, etc.). All work-related information is in one place. We also recommend that you enter your phone number in the profile settings so that collaborators can call you directly from the app.",
           },
           eventTracking: {
             title: "Event Tracking",
             description:
-              "Always know the status of your events, who you're working with, what still needs to be done, and where the event is taking place. In case of any changes, easily modify all event-related information.",
+              "Always know the status of your events and so will your collaborators who have accepted event, who you're working with, what still needs to be done, and where the event is taking place. In case of any changes, easily modify all event-related information so your collaborators can be informed about all changes.",
           },
         },
         privacyPolicy: {
@@ -640,17 +640,17 @@ const resources = {
           createEvents: {
             title: "Kreiranje događaja",
             description:
-              "Kreirajte i upravljajte svirkama jednostavno. Unesite sve neophodne informacije i pozicije koje su vam potrebne za taj događaj. Pozovite sve saradnike za potrebne pozicije jednim klikom. Na njima je samo da prihvate i dodju da sviraju, a na vama je samo da potvrdite dogadjaj i da se opustite do njega. Takođe možete definisati hijerarhiju pozivanja, poredjajte saradnike po prioritetu i pozive će dobijati redom prvi, pa ako on ne može, prvi sledeći itd.",
+              "Kreirajte i upravljajte svirkama jednostavno. Unesite sve neophodne informacije i pozicije koje su vam potrebne za taj događaj. Pozovite sve saradnike za potrebne pozicije jednim klikom. Na njima je samo da prihvate i dodju da sviraju jer sve informacije imaju kada kliknu na event, a na vama je samo da potvrdite dogadjaj i da se opustite do njega. Takođe možete definisati hijerarhiju pozivanja, poredjajte saradnike po prioritetu i pozive će dobijati redom prvi, pa ako on ne može, prvi sledeći itd.",
           },
           communication: {
             title: "Komunikacija",
             description:
-              "Neometana komunikacija putem četa i notifikacija koje Vas drže informisanim u svakom trenutku. Nema više traženja poruka u raznim aplikacijama (WhatsApp, Viber, Messenger, SMS itd.). Sve informacije vezane za Vaš posao su na jednom mestu.",
+              "Neometana komunikacija putem četa i notifikacija koje Vas drže informisanim u svakom trenutku. Nema više traženja poruka u raznim aplikacijama (WhatsApp, Viber, Messenger, SMS itd.). Sve informacije vezane za Vaš posao su na jednom mestu. Preporučujemo joši da upišete Vaš broj telefona u podešavanjima profila da bi saradnici mogli da vas pozovu direktno iz aplikacije.",
           },
           eventTracking: {
             title: "Praćenje događaja",
             description:
-              "Uvek znajte status vaših događaja, sa kim radite, šta još treba da se uradi i gde se događaj održava. U slučaju nekih promena, lako promenite sve informacije vezane za događaj.",
+              "Uvek znajte status vaših događaja a sa vama i vaši saradnici koji su prihvatili isti, sa kim radite, šta još treba da se uradi i gde se događaj održava. U slučaju nekih promena, lako promenite sve informacije vezane za događaj a vaši saradnici na dogadjaju će imati uvid u sve izmene.",
           },
         },
         privacyPolicy: {
