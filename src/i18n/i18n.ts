@@ -645,7 +645,7 @@ const resources = {
           communication: {
             title: "Komunikacija",
             description:
-              "Neometana komunikacija putem četa i notifikacija koje Vas drže informisanim u svakom trenutku. Nema više traženja poruka u raznim aplikacijama (WhatsApp, Viber, Messenger, SMS itd.). Sve informacije vezane za Vaš posao su na jednom mestu. Preporučujemo joši da upišete Vaš broj telefona u podešavanjima profila da bi saradnici mogli da vas pozovu direktno iz aplikacije.",
+              "Neometana komunikacija putem četa i notifikacija koje Vas drže informisanim u svakom trenutku. Nema više traženja poruka u raznim aplikacijama (WhatsApp, Viber, Messenger, SMS itd.). Sve informacije vezane za Vaš posao su na jednom mestu. Preporučujemo još i da upišete Vaš broj telefona u podešavanjima profila da bi saradnici mogli da vas pozovu direktno iz aplikacije.",
           },
           eventTracking: {
             title: "Praćenje događaja",
