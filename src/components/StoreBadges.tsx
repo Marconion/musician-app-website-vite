@@ -1,7 +1,11 @@
 import AppStoreBadge from "../assets/app_badges/app-store-badge.png";
 import GoogleStoreBadge from "../assets/app_badges/google-icon.svg";
 
-export const StoreBadges = () => {
+interface StoreBadgesProps {
+  filter?: boolean;
+}
+
+export const StoreBadges = ({ filter }: StoreBadgesProps) => {
   return (
     <div
       style={{
@@ -45,7 +49,7 @@ export const StoreBadges = () => {
           style={{
             width: "150px",
             display: "block",
-            filter: "invert(1)",
+            filter: filter ? "invert(1)" : "none",
           }}
           alt="Google Store Badge"
         />

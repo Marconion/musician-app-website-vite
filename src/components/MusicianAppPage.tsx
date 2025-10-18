@@ -98,7 +98,7 @@ export default function MusicianAppPage() {
 
       {/* Hero Section */}
       {/* Original version: <section className="py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200"> */}
-      <section className="py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200 relative overflow-hidden">
+      <section className="py-10 md:py-16 lg:py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200 relative overflow-hidden">
         {/* Animated background gradient with orange accent */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-300/30 via-purple-200/20 to-orange-musician/30 animate-gradient-shift"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -119,7 +119,7 @@ export default function MusicianAppPage() {
                 </p>
               </AnimatedSection>
 
-              <div className="flex flex-wrap gap-3 mb-8">
+              <div className="flex flex-wrap gap-3 mb-1">
                 <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">
                   React Native
                 </span>
@@ -129,6 +129,9 @@ export default function MusicianAppPage() {
                 <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium">
                   PostgreSQL
                 </span>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <StoreBadges />
+                </div>
               </div>
 
               <div className="flex items-center space-x-6">
@@ -308,7 +311,7 @@ export default function MusicianAppPage() {
             {t("musicianApp.cta.subtitle")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <StoreBadges />
+            <StoreBadges filter />
           </div>
 
           {/* Privacy Policy Link */}
