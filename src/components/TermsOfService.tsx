@@ -278,11 +278,13 @@ export default function TermsOfService() {
                   <p className="font-semibold text-gray-900 mb-2">
                     👉{" "}
                     <a
-                      href="https://softivity.net/privacy"
+                      href="https://softivity.net/politika-privatnosti"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue-600 hover:text-blue-700 underline">
-                      https://softivity.net/privacy
+                      className="text-blue-600 hover:text-blue-700">
+                      {t(
+                        "musicianApp.termsOfService.privacyData.privacyPolicyLink"
+                      )}
                     </a>
                   </p>
                 </div>

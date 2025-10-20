@@ -194,7 +194,11 @@ const resources = {
             description:
               "Always know the status of your events and so will your collaborators who have accepted event, who you're working with, what still needs to be done, and where the event is taking place. In case of any changes, easily modify all event-related information so your collaborators can be informed about all changes.",
           },
+          termsOfService: {
+            privacyPolicyLink: `"Musician's App" Privacy Policy`,
+          },
         },
+
         privacyPolicy: {
           title: "Musician's App - Privacy Policy and Data Protection",
           updated: "Updated: June 2025",
@@ -331,6 +335,7 @@ const resources = {
               "By using the Application, you agree to the processing of your personal data in accordance with our Privacy Policy available at:",
             paragraph2:
               "Softivity will not sell, rent, or otherwise transfer your data to third parties, unless legally required or necessary for service functionality.",
+            privacyPolicyLink: `"Musician's App" Privacy Policy`,
           },
           paidFeatures: {
             title: "8. Paid Features",
@@ -791,6 +796,7 @@ const resources = {
               "Upotrebom Aplikacije saglasni ste sa obradom vaših ličnih podataka u skladu sa našom Politikom privatnosti, dostupnom na adresi:",
             paragraph2:
               "Softivity neće prodavati, iznajmljivati ili na drugi način ustupati vaše podatke trećim licima, osim ako to nije zakonom obavezno ili neophodno za funkcionisanje servisa.",
+            privacyPolicyLink: `"Musician's App Politika privatnosti"`,
           },
           paidFeatures: {
             title: "8. Plaćene funkcionalnosti",
