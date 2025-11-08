@@ -24,34 +24,6 @@ export default function Services() {
       description: t("services.customSoftware.description"),
       features: ["Enterprise Solutions"],
     },
-    // {
-    //   icon: Cloud,
-    //   title: t("services.cloudSolutions.title"),
-    //   description: t("services.cloudSolutions.description"),
-    //   features: ["AWS & Azure", "DevOps", "Microservices", "Serverless"],
-    // },
-    // {
-    //   icon: Shield,
-    //   title: t("services.cybersecurity.title"),
-    //   description: t("services.cybersecurity.description"),
-    //   features: [
-    //     "Penetration Testing",
-    //     "QA Automation",
-    //     "Code Review",
-    //     "Compliance",
-    //   ],
-    // },
-    // {
-    //   icon: Zap,
-    //   title: t("services.consulting.title"),
-    //   description: t("services.consulting.description"),
-    //   features: [
-    //     "Tech Stack Selection",
-    //     "Architecture Design",
-    //     "Digital Strategy",
-    //     "Team Augmentation",
-    //   ],
-    // },
   ];
 
   return (
@@ -75,7 +47,7 @@ export default function Services() {
               animationType="fadeUp"
               delay={index * 100}
               threshold={0.2}>
-              <div className="group bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-200 hover:shadow-xl transition-all duration-300">
+              <div className="group bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-200 shadow-sm hover:shadow-xl transition-all duration-300">
                 <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
                   <service.icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" />
                 </div>
@@ -92,7 +64,7 @@ export default function Services() {
                   {service.features.map((feature, idx) => (
                     <span
                       key={idx}
-                      className="text-xs font-medium bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
+                      className="text-xs font-medium bg-gray-100 text-gray-700 px-3 py-1 rounded-full shadow-sm">
                       {feature}
                     </span>
                   ))}
