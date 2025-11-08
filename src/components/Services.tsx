@@ -16,7 +16,7 @@ export default function Services() {
       icon: Globe,
       title: t("services.webDev.title"),
       description: t("services.webDev.description"),
-      features: ["React", "Node.js", "Progressive Web Apps", "E-commerce"],
+      features: ["React", "Node.js", "Progressive Web Apps"],
     },
     {
       icon: Layers,
@@ -47,8 +47,8 @@ export default function Services() {
               animationType="fadeUp"
               delay={index * 100}
               threshold={0.2}>
-              <div className="group bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-200 shadow-sm hover:shadow-xl transition-all duration-300">
-                <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+              <div className="group bg-white shadow-small rounded-2xl p-8 hover:border-2 hover:border-blue-200  hover:shadow-xl transition-all duration-300">
+                <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors shadow-small">
                   <service.icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" />
                 </div>
 

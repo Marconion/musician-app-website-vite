@@ -37,7 +37,7 @@ export default function Portfolio() {
               animationType="fadeUp"
               delay={index * 150}
               threshold={0.2}>
-              <div className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
+              <div className="group bg-white rounded-2xl overflow-hidden shadow-small hover:shadow-2xl transition-all duration-300">
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={project.image}

@@ -75,7 +75,7 @@ export default function MusicianAppPage() {
 
   return (
     <div
-      className={`min-h-screen bg-white transition-opacity duration-700 ease-in-out ${
+      className={`min-h-screen bg-white transition-opacity duration-700 ease-in-out pt-16 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}>
       {/* Back Navigation */}
