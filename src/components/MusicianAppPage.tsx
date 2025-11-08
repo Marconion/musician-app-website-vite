@@ -135,11 +135,11 @@ export default function MusicianAppPage() {
               </div>
 
               <div className="flex items-center space-x-6">
-                <div className="flex items-center">
+                {/* <div className="flex items-center">
                   <Star className="w-5 h-5 text-yellow-400 fill-current" />
                   <span className="ml-1 font-semibold">No</span>
                   <span className="ml-1 text-gray-600">Rating Yet</span>
-                </div>
+                </div> */}
                 {/* <div className="flex items-center">
                   <Download className="w-5 h-5 text-blue-600" />
                   <span className="ml-1 font-semibold">10K+</span>
