@@ -6,6 +6,7 @@ import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsOfService from "./components/TermsOfService";
 import AccountDeletion from "./components/AccountDeletion";
 import Footer from "./components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
+      <Analytics mode="production" />
     </Router>
   );
 }
