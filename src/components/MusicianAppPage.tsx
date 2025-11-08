@@ -10,7 +10,7 @@ import {
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import Cover from "../assets/Cover.png";
+import cover from "../assets/Cover.png";
 import screen_1 from "../assets/screenshots/5.jpg";
 import screen_2 from "../assets/screenshots/3.jpg";
 import screen_3 from "../assets/screenshots/4.jpg";
@@ -79,7 +79,7 @@ export default function MusicianAppPage() {
         isVisible ? "opacity-100" : "opacity-0"
       }`}>
       {/* Back Navigation */}
-      <div className="bg-gray-50 border-b">
+      {/* <div className="bg-gray-50 border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
           <Link
             to="/"
@@ -94,10 +94,9 @@ export default function MusicianAppPage() {
             {i18n.language === "en" ? "SR" : "EN"}
           </button>
         </div>
-      </div>
+      </div> */}
 
       {/* Hero Section */}
-      {/* Original version: <section className="py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200"> */}
       <section className="py-10 md:py-16 lg:py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200 relative overflow-hidden">
         {/* Animated background gradient with orange accent */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-300/30 via-purple-200/20 to-orange-musician/30 animate-gradient-shift"></div>
@@ -129,7 +128,7 @@ export default function MusicianAppPage() {
                 <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium">
                   PostgreSQL
                 </span>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
                   <StoreBadges />
                 </div>
               </div>
@@ -154,7 +153,7 @@ export default function MusicianAppPage() {
                 delay={300}
                 threshold={0.1}>
                 <img
-                  src={Cover}
+                  src={cover}
                   alt="Musician App"
                   className="w-full max-w-md mx-auto lg:ml-auto rounded-3xl shadow-2xl"
                 />
@@ -178,10 +177,8 @@ export default function MusicianAppPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4">
+              <div key={index} className="card">
+                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4 shadow-small">
                   {feature.icon}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">
@@ -216,14 +213,10 @@ export default function MusicianAppPage() {
                 delay={index * 150}
                 threshold={0.1}>
                 <div className="text-center">
-                  {/* <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Play className="w-8 h-8 text-blue-600" />
-                  </div>
-                  <p className="text-gray-600">{screenshot.alt}</p> */}
                   <img
                     src={screenshot.img}
                     alt={screenshot.alt}
-                    className="rounded-2xl shadow-md w-5/6 sm:w-4/5 md:w-full mx-auto"
+                    className="rounded-2xl shadow-lg shadow-gray-400 w-5/6 sm:w-4/5 md:w-full mx-auto"
                   />
                 </div>
               </AnimatedSection>
@@ -244,20 +237,20 @@ export default function MusicianAppPage() {
             </p>
           </div>
 
-          <div className="bg-white rounded-3xl p-8 shadow-lg">
+          <div className="bg-gray-200 rounded-3xl p-8 shadow-inner shadow-gray-300">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="text-center">
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
                   {t("musicianApp.technologyStack.frontend")}
                 </h3>
                 <div className="space-y-2">
-                  <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg">
+                  <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg shadow-small">
                     React Native
                   </div>
-                  <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg">
+                  <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg shadow-small">
                     JavaScript
                   </div>
-                  <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg">
+                  <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg shadow-small">
                     React Navigation
                   </div>
                 </div>
@@ -268,7 +261,7 @@ export default function MusicianAppPage() {
                   {t("musicianApp.technologyStack.backend")}
                 </h3>
                 <div className="space-y-2">
-                  <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg">
+                  <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg shadow-small">
                     PostgreSQL
                   </div>
                   {/* <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg">
@@ -310,7 +303,7 @@ export default function MusicianAppPage() {
           <p className="text-xl text-blue-100 mb-8">
             {t("musicianApp.cta.subtitle")}
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center ">
             <StoreBadges filter />
           </div>
 
