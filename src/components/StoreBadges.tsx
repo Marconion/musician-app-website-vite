@@ -46,10 +46,10 @@ export const StoreBadges = ({ filter }: StoreBadgesProps) => {
         rel="noopener noreferrer">
         <img
           src={GoogleStoreBadge}
+          className={filter ? "invert" : "dark:invert"}
           style={{
             width: "150px",
             display: "block",
-            filter: filter ? "invert(1)" : "none",
           }}
           alt="Google Store Badge"
         />
