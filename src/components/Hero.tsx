@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-200 via-white to-gray-200 relative overflow-hidden">
+      className="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-to-br from-blue-200 via-white to-gray-200 dark:from-blue-950 dark:via-gray-900 dark:to-gray-900 relative overflow-hidden">
       {/* Animated background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-300/30 via-purple-200/20 to-cyan-300/30 animate-gradient-shift"></div>
 
@@ -28,13 +28,13 @@ export default function Hero() {
               <span>{t("hero.badge", "Innovative Software Solutions")}</span>
             </div>
             <AnimatedSection animationType="fadeLeft">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
                 {t("hero.title")}
               </h1>
             </AnimatedSection>
 
             <AnimatedSection animationType="fadeRight" delay={100}>
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+              <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 {t("hero.subtitle")}
               </p>
             </AnimatedSection>
@@ -52,7 +52,7 @@ export default function Hero() {
                     .getElementById("portfolio")
                     ?.scrollIntoView({ behavior: "smooth" })
                 }
-                className="bg-white text-gray-700 px-8 py-4 rounded-lg hover:bg-gray-50 transition-colors font-medium border-2 border-gray-200">
+                className="bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 px-8 py-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors font-medium border-2 border-gray-200 dark:border-gray-600">
                 {t("hero.learnMore")}
               </button>
             </div>

@@ -11,7 +11,7 @@ import { Analytics } from "@vercel/analytics/react";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white dark:bg-gray-900">
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />

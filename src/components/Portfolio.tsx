@@ -17,14 +17,14 @@ export default function Portfolio() {
     },
   ];
   return (
-    <section id="portfolio" className="py-20 bg-gray-50">
+    <section id="portfolio" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <AnimatedSection animationType="fadeUp" delay={0}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               {t("portfolio.title")}
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {t("portfolio.subtitle")}
             </p>
           </AnimatedSection>
@@ -37,7 +37,7 @@ export default function Portfolio() {
               animationType="fadeUp"
               delay={index * 150}
               threshold={0.2}>
-              <div className="group bg-white rounded-2xl overflow-hidden shadow-small hover:shadow-2xl transition-all duration-300">
+              <div className="group bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-small hover:shadow-2xl transition-all duration-300">
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={project.image}
@@ -60,11 +60,11 @@ export default function Portfolio() {
                     {project.category}
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                     {project.title}
                   </h3>
 
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                     {project.description}
                   </p>
 
@@ -72,7 +72,7 @@ export default function Portfolio() {
                     {project.tags.map((tag, idx) => (
                       <span
                         key={idx}
-                        className="text-xs font-medium bg-blue-50 text-blue-700 px-3 py-1 rounded-full">
+                        className="text-xs font-medium bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 px-3 py-1 rounded-full">
                         {tag}
                       </span>
                     ))}

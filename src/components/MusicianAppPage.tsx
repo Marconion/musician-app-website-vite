@@ -75,7 +75,7 @@ export default function MusicianAppPage() {
 
   return (
     <div
-      className={`min-h-screen bg-white transition-opacity duration-700 ease-in-out pt-16 ${
+      className={`min-h-screen bg-white dark:bg-gray-900 transition-opacity duration-700 ease-in-out pt-16 ${
         isVisible ? "opacity-100" : "opacity-0"
       }`}>
       {/* Back Navigation */}
@@ -97,7 +97,7 @@ export default function MusicianAppPage() {
       </div> */}
 
       {/* Hero Section */}
-      <section className="py-10 md:py-16 lg:py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200 relative overflow-hidden">
+      <section className="py-10 md:py-16 lg:py-20 bg-gradient-to-br from-blue-200 via-white to-gray-200 dark:from-blue-950 dark:via-gray-900 dark:to-gray-900 relative overflow-hidden">
         {/* Animated background gradient with orange accent */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-300/30 via-purple-200/20 to-orange-musician/30 animate-gradient-shift"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -108,24 +108,24 @@ export default function MusicianAppPage() {
               </div>
 
               <AnimatedSection animationType="fadeLeft">
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
                   {t("musicianApp.title")}
                 </h1>
               </AnimatedSection>
               <AnimatedSection animationType="fadeRight" delay={100}>
-                <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                   {t("musicianApp.subtitle")}
                 </p>
               </AnimatedSection>
 
               <div className="flex flex-wrap gap-3 mb-1">
-                <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium">
+                <span className="bg-blue-100 dark:bg-blue-900/40 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full font-medium">
                   React Native
                 </span>
-                <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
+                <span className="bg-green-100 dark:bg-green-900/40 text-green-800 dark:text-green-300 px-4 py-2 rounded-full font-medium">
                   JavaScript
                 </span>
-                <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium">
+                <span className="bg-purple-100 dark:bg-purple-900/40 text-purple-800 dark:text-purple-300 px-4 py-2 rounded-full font-medium">
                   PostgreSQL
                 </span>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
@@ -164,27 +164,29 @@ export default function MusicianAppPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               {t("musicianApp.keyFeatures.title")}
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {t("musicianApp.keyFeatures.subtitle")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="card">
+              <div
+                key={index}
+                className="card dark:bg-gray-700 dark:shadow-gray-900">
                 <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-4 shadow-small">
                   {feature.icon}
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {feature.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                   {feature.description}
                 </p>
               </div>
@@ -194,13 +196,13 @@ export default function MusicianAppPage() {
       </section>
 
       {/* Screenshots Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               {t("musicianApp.screenshots.title")}
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {t("musicianApp.screenshots.subtitle")}
             </p>
           </div>
@@ -226,42 +228,42 @@ export default function MusicianAppPage() {
       </section>
 
       {/* Technology Stack */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50 dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               {t("musicianApp.technologyStack.title")}
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {t("musicianApp.technologyStack.subtitle")}
             </p>
           </div>
 
-          <div className="bg-gray-200 rounded-3xl p-8 shadow-inner shadow-gray-300">
+          <div className="bg-gray-200 dark:bg-gray-700 rounded-3xl p-8 shadow-inner shadow-gray-300 dark:shadow-gray-900">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                   {t("musicianApp.technologyStack.frontend")}
                 </h3>
                 <div className="space-y-2">
-                  <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg shadow-small">
+                  <div className="bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-lg shadow-small">
                     React Native
                   </div>
-                  <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg shadow-small">
+                  <div className="bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-lg shadow-small">
                     JavaScript
                   </div>
-                  <div className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg shadow-small">
+                  <div className="bg-blue-50 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 px-4 py-2 rounded-lg shadow-small">
                     React Navigation
                   </div>
                 </div>
               </div>
 
               <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
                   {t("musicianApp.technologyStack.backend")}
                 </h3>
                 <div className="space-y-2">
-                  <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg shadow-small">
+                  <div className="bg-green-50 dark:bg-green-900/40 text-green-700 dark:text-green-300 px-4 py-2 rounded-lg shadow-small">
                     PostgreSQL
                   </div>
                   {/* <div className="bg-green-50 text-green-700 px-4 py-2 rounded-lg">

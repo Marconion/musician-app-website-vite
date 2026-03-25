@@ -27,14 +27,14 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <AnimatedSection animationType="fadeUp" delay={0}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               {t("services.title")}
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {t("services.subtitle")}
             </p>
           </AnimatedSection>
@@ -47,16 +47,16 @@ export default function Services() {
               animationType="fadeUp"
               delay={index * 100}
               threshold={0.2}>
-              <div className="group bg-white shadow-small rounded-2xl p-8 hover:border-2 hover:border-blue-200  hover:shadow-xl transition-all duration-300">
+              <div className="group bg-white dark:bg-gray-800 shadow-small rounded-2xl p-8 hover:border-2 hover:border-blue-200 dark:hover:border-blue-700 hover:shadow-xl transition-all duration-300">
                 <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors shadow-small">
                   <service.icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" />
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                   {service.title}
                 </h3>
 
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                   {service.description}
                 </p>
 
@@ -64,7 +64,7 @@ export default function Services() {
                   {service.features.map((feature, idx) => (
                     <span
                       key={idx}
-                      className="text-xs font-medium bg-gray-100 text-gray-700 px-3 py-1 rounded-full shadow-sm">
+                      className="text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full shadow-sm">
                       {feature}
                     </span>
                   ))}

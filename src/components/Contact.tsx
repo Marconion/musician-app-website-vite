@@ -30,14 +30,14 @@ export default function Contact() {
           message: formData.message,
           to_email: "support@softivity.net",
         },
-        "rzg-IM__5DhzYYJ9U" // Public Key iz EmailJS dashboard-a
+        "rzg-IM__5DhzYYJ9U", // Public Key iz EmailJS dashboard-a
       );
 
       alert(
         t(
-          "contact.form.successMessage"
+          "contact.form.successMessage",
           // "Thank you for your message! We will get back to you soon."
-        )
+        ),
       );
       setFormData({ name: "", email: "", company: "", message: "" });
     } catch (error) {
@@ -49,7 +49,7 @@ export default function Contact() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
@@ -60,14 +60,14 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50 overflow-hidden">
+      className="py-20 bg-gradient-to-br from-blue-50 via-white to-cyan-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-900 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <AnimatedSection animationType="fadeUp" delay={0}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               {t("contact.title")}
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {t("contact.subtitle")}
             </p>
           </AnimatedSection>
@@ -77,10 +77,10 @@ export default function Contact() {
           <AnimatedSection animationType="fadeLeft" delay={100}>
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   {t("contact.getInTouch.title")}
                 </h3>
-                <p className="text-gray-600 leading-relaxed mb-8">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
                   {t("contact.getInTouch.description")}
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function Contact() {
                     </h4>
                     <a
                       href="mailto:hello@softivity.com"
-                      className="text-gray-600 hover:text-blue-600 transition-colors">
+                      className="text-gray-600 dark:text-gray-300 hover:text-blue-600 transition-colors">
                       support@softivity.net
                     </a>
                   </div>
@@ -162,12 +162,12 @@ export default function Contact() {
           </AnimatedSection>
 
           <AnimatedSection animationType="fadeRight" delay={200}>
-            <div className="bg-white rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-4 sm:p-6 lg:p-8">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-sm font-semibold text-gray-700 mb-2">
+                    className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                     {t("contact.form.name")}
                   </label>
                   <input
@@ -177,7 +177,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors box-border"
+                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-600 rounded-lg focus:border-blue-600 focus:outline-none transition-colors box-border bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
                     placeholder={t("contact.form.namePlaceholder")}
                   />
                 </div>
@@ -185,7 +185,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-semibold text-gray-700 mb-2">
+                    className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                     {t("contact.form.email")}
                   </label>
                   <input
@@ -195,7 +195,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors box-border"
+                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-600 rounded-lg focus:border-blue-600 focus:outline-none transition-colors box-border bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
                     placeholder={t("contact.form.emailPlaceholder")}
                   />
                 </div>
@@ -203,7 +203,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="company"
-                    className="block text-sm font-semibold text-gray-700 mb-2">
+                    className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                     {t("contact.form.company")}
                   </label>
                   <input
@@ -212,7 +212,7 @@ export default function Contact() {
                     name="company"
                     value={formData.company}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors box-border"
+                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-600 rounded-lg focus:border-blue-600 focus:outline-none transition-colors box-border bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
                     placeholder={t("contact.form.companyPlaceholder")}
                   />
                 </div>
@@ -220,7 +220,7 @@ export default function Contact() {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-semibold text-gray-700 mb-2">
+                    className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                     {t("contact.form.message")}
                   </label>
                   <textarea
@@ -230,7 +230,7 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-600 focus:outline-none transition-colors resize-none box-border"
+                    className="w-full px-4 py-3 border-2 border-gray-200 dark:border-gray-600 rounded-lg focus:border-blue-600 focus:outline-none transition-colors resize-none box-border bg-white dark:bg-gray-700 text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500"
                     placeholder={t("contact.form.messagePlaceholder")}
                   />
                 </div>

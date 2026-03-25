@@ -41,14 +41,14 @@ export default function Process() {
   ];
 
   return (
-    <section id="process" className="py-20 bg-white">
+    <section id="process" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <AnimatedSection animationType="fadeUp" delay={0}>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               {t("process.title")}
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
               {t("process.subtitle")}
             </p>
           </AnimatedSection>
@@ -62,7 +62,7 @@ export default function Process() {
               delay={index * 100}
               threshold={0.2}>
               <div className="relative">
-                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 h-full shadow-small hover:shadow-lg transition-shadow">
+                <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-gray-800 dark:to-gray-700 rounded-2xl p-8 h-full shadow-small hover:shadow-lg transition-shadow">
                   <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-inner shadow-white">
                     <step.icon
                       className="w-6 h-6 text-white"
@@ -70,17 +70,17 @@ export default function Process() {
                     />
                   </div>
 
-                  <div className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-inner shadow-gray-500/40">
+                  <div className="absolute top-4 right-4 w-10 h-10 bg-white dark:bg-gray-900 rounded-full flex items-center justify-center shadow-inner shadow-gray-500/40">
                     <span className="text-lg font-bold text-blue-600">
                       {index + 1}
                     </span>
                   </div>
 
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
                     {step.title}
                   </h3>
 
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                     {step.description}
                   </p>
 
@@ -88,7 +88,9 @@ export default function Process() {
                     {step.points.map((point, idx) => (
                       <li key={idx} className="flex items-start">
                         <span className="text-blue-600 mr-2">•</span>
-                        <span className="text-sm text-gray-600">{point}</span>
+                        <span className="text-sm text-gray-600 dark:text-gray-400">
+                          {point}
+                        </span>
                       </li>
                     ))}
                   </ul>
