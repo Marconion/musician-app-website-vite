@@ -16,7 +16,7 @@ export default function Services() {
       icon: Globe,
       title: t("services.webDev.title"),
       description: t("services.webDev.description"),
-      features: ["React", "Node.js", "Progressive Web Apps"],
+      features: ["React", "JavaScript", "Node.js", "Progressive Web Apps"],
     },
     {
       icon: Layers,

@@ -13,7 +13,7 @@ export default function Portfolio() {
       category: t("portfolio.projects.musicianApp.category"),
       description: t("portfolio.projects.musicianApp.description"),
       image: Cover,
-      tags: ["React Native", "Node.js", "PostgreSQL"],
+      tags: ["React Native", "JavaScript", "PostgreSQL"],
     },
   ];
   return (

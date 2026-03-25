@@ -123,7 +123,7 @@ export default function MusicianAppPage() {
                   React Native
                 </span>
                 <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full font-medium">
-                  Node.js
+                  JavaScript
                 </span>
                 <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium">
                   PostgreSQL
