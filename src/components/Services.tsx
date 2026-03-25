@@ -47,7 +47,7 @@ export default function Services() {
               animationType="fadeUp"
               delay={index * 100}
               threshold={0.2}>
-              <div className="group bg-white dark:bg-gray-800 shadow-small rounded-2xl p-8 hover:border-2 hover:border-blue-200 dark:hover:border-blue-700 hover:shadow-xl transition-all duration-300">
+              <div className="group bg-white dark:bg-gray-800 shadow-small rounded-2xl p-8 border-2 border-transparent hover:border-blue-200 dark:hover:border-blue-700 hover:shadow-xl transition-all duration-300">
                 <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors shadow-small">
                   <service.icon className="w-7 h-7 text-blue-600 group-hover:text-white transition-colors" />
                 </div>
