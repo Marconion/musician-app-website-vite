@@ -179,7 +179,7 @@ export default function Header() {
               ) : (
                 <Moon className="w-5 h-5" />
               )}
-              <span>{isDark ? "Svijetli mod" : "Tamni mod"}</span>
+              <span>{isDark ? t("nav.lightMode") : t("nav.darkMode")}</span>
             </button>
           </div>
         )}

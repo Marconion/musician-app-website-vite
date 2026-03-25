@@ -12,6 +12,8 @@ const resources = {
         process: "Process",
         portfolio: "Portfolio",
         contact: "Contact",
+        darkMode: "Dark mode",
+        lightMode: "Light mode",
       },
       // Hero Section
       hero: {
@@ -474,6 +476,8 @@ const resources = {
         process: "Proces",
         portfolio: "Portfolio",
         contact: "Kontakt",
+        darkMode: "Tamni mod",
+        lightMode: "Svetli mod",
       },
       // Hero Section
       hero: {
